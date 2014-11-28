@@ -97,10 +97,10 @@ public class Manager extends javax.swing.JFrame {
         ManagerGraphs = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jList4 = new javax.swing.JList();
-        jCheckBox9 = new javax.swing.JCheckBox();
-        jCheckBox10 = new javax.swing.JCheckBox();
-        jCheckBox11 = new javax.swing.JCheckBox();
+        resultGraphs = new javax.swing.JList();
+        cDayGraphs = new javax.swing.JCheckBox();
+        cMonthGraphs = new javax.swing.JCheckBox();
+        cYearGraphs = new javax.swing.JCheckBox();
         jLabel21 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         Home = new javax.swing.JPanel();
@@ -154,12 +154,12 @@ public class Manager extends javax.swing.JFrame {
         LogFiles = new javax.swing.JPanel();
         ManagerLogfiles = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jList3 = new javax.swing.JList();
-        jCheckBox6 = new javax.swing.JCheckBox();
-        jCheckBox7 = new javax.swing.JCheckBox();
-        jCheckBox8 = new javax.swing.JCheckBox();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel14 = new javax.swing.JLabel();
+        searchResultsLogFiles = new javax.swing.JList();
+        cAllLogFiles = new javax.swing.JCheckBox();
+        cTimeLogFiles = new javax.swing.JCheckBox();
+        cUserLogFiles = new javax.swing.JCheckBox();
+        searchLogFiles = new javax.swing.JTextField();
+        searchButtonLogFiles = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -205,23 +205,23 @@ public class Manager extends javax.swing.JFrame {
         jLabel16.setText("jLabel11");
         ManagerGraphs.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, 70));
 
-        jList4.setModel(new javax.swing.AbstractListModel() {
+        resultGraphs.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Grafiek here" };
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane4.setViewportView(jList4);
+        jScrollPane4.setViewportView(resultGraphs);
 
         ManagerGraphs.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, 540, 220));
 
-        jCheckBox9.setText("Day");
-        ManagerGraphs.add(jCheckBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
+        cDayGraphs.setText("Day");
+        ManagerGraphs.add(cDayGraphs, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
 
-        jCheckBox10.setText("Month");
-        ManagerGraphs.add(jCheckBox10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 110, -1));
+        cMonthGraphs.setText("Month");
+        ManagerGraphs.add(cMonthGraphs, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 110, -1));
 
-        jCheckBox11.setText("Year");
-        ManagerGraphs.add(jCheckBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 110, -1));
+        cYearGraphs.setText("Year");
+        ManagerGraphs.add(cYearGraphs, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 110, -1));
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vliegtuig_CorendonNL-2-stijgend.png"))); // NOI18N
         ManagerGraphs.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 160, 50));
@@ -480,29 +480,29 @@ public class Manager extends javax.swing.JFrame {
         ManagerLogfiles.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.gray, null, java.awt.Color.lightGray));
         ManagerLogfiles.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jList3.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Baggage status" };
+        searchResultsLogFiles.setModel(new javax.swing.AbstractListModel() {
+            String[] strings = { "Log Files" };
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane3.setViewportView(jList3);
+        jScrollPane3.setViewportView(searchResultsLogFiles);
 
         ManagerLogfiles.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, 540, 220));
 
-        jCheckBox6.setText("All");
-        ManagerLogfiles.add(jCheckBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
+        cAllLogFiles.setText("All");
+        ManagerLogfiles.add(cAllLogFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
 
-        jCheckBox7.setText("Time");
-        ManagerLogfiles.add(jCheckBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 110, -1));
+        cTimeLogFiles.setText("Time");
+        ManagerLogfiles.add(cTimeLogFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 110, -1));
 
-        jCheckBox8.setText("Users");
-        ManagerLogfiles.add(jCheckBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 110, -1));
+        cUserLogFiles.setText("Users");
+        ManagerLogfiles.add(cUserLogFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 110, -1));
 
-        jTextField6.setText("Search");
-        ManagerLogfiles.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 540, -1));
+        searchLogFiles.setText("Search");
+        ManagerLogfiles.add(searchLogFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 540, -1));
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/seoLogo.png"))); // NOI18N
-        ManagerLogfiles.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 120, -1, -1));
+        searchButtonLogFiles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/seoLogo.png"))); // NOI18N
+        ManagerLogfiles.add(searchButtonLogFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 120, -1, -1));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
         jLabel15.setText("jLabel11");
@@ -1232,10 +1232,16 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JPanel Status;
     private javax.swing.JLabel StatusButton;
     private javax.swing.JLabel addressHome;
+    private javax.swing.JCheckBox cAllLogFiles;
+    private javax.swing.JCheckBox cDayGraphs;
     private javax.swing.JCheckBox cFoundBaggageStatus;
     private javax.swing.JCheckBox cFoundStatus;
     private javax.swing.JCheckBox cHandledBaggageStatus;
+    private javax.swing.JCheckBox cMonthGraphs;
     private javax.swing.JCheckBox cOverviewStatus;
+    private javax.swing.JCheckBox cTimeLogFiles;
+    private javax.swing.JCheckBox cUserLogFiles;
+    private javax.swing.JCheckBox cYearGraphs;
     private javax.swing.JLabel cityHome;
     private javax.swing.JLabel countryHome;
     private javax.swing.JLabel dateHome;
@@ -1244,15 +1250,8 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JLabel helpButton1;
     private javax.swing.JLabel helpTitle6;
     private javax.swing.JLabel homeButton;
-    private javax.swing.JCheckBox jCheckBox10;
-    private javax.swing.JCheckBox jCheckBox11;
-    private javax.swing.JCheckBox jCheckBox6;
-    private javax.swing.JCheckBox jCheckBox7;
-    private javax.swing.JCheckBox jCheckBox8;
-    private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel18;
@@ -1267,14 +1266,11 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JList jList3;
-    private javax.swing.JList jList4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTextField jTextField6;
     private javax.swing.JLabel lAddressHome;
     private javax.swing.JLabel lCityHome;
     private javax.swing.JLabel lCountryHome;
@@ -1286,13 +1282,17 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JPanel menu;
     private javax.swing.JLabel nameHome;
     private javax.swing.JLabel postalCodeHome;
+    private javax.swing.JList resultGraphs;
     private javax.swing.JTextField searchBaggage;
     private javax.swing.JLabel searchButton;
     private javax.swing.JLabel searchButtonBaggage;
     private javax.swing.JLabel searchButtonCustomer;
+    private javax.swing.JLabel searchButtonLogFiles;
     private javax.swing.JLabel searchButtonResult;
     private javax.swing.JTextField searchCustomer;
+    private javax.swing.JTextField searchLogFiles;
     private javax.swing.JList searchResultStatus;
+    private javax.swing.JList searchResultsLogFiles;
     private javax.swing.JTextField searchStatus;
     private javax.swing.JLabel tUsernameHome;
     private javax.swing.JLabel usernameHome;
