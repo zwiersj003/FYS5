@@ -129,13 +129,13 @@ public class Manager extends javax.swing.JFrame {
         Backgroundlabel1 = new javax.swing.JLabel();
         Search = new javax.swing.JPanel();
         ManagerSearch = new javax.swing.JPanel();
-        jTextField4 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
+        searchBaggage = new javax.swing.JTextField();
+        searchButtonBaggage = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        Searchcustomer = new javax.swing.JTextField();
-        jLabel23 = new javax.swing.JLabel();
+        searchCustomer = new javax.swing.JTextField();
+        searchButtonCustomer = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -336,22 +336,22 @@ public class Manager extends javax.swing.JFrame {
         ManagerSearch.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
         ManagerSearch.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField4.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextField4.setText("Search Baggage");
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        searchBaggage.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        searchBaggage.setText("Search Baggage");
+        searchBaggage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                searchBaggageActionPerformed(evt);
             }
         });
-        ManagerSearch.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 540, -1));
+        ManagerSearch.add(searchBaggage, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 540, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/seoLogo.png"))); // NOI18N
-        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+        searchButtonBaggage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/seoLogo.png"))); // NOI18N
+        searchButtonBaggage.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel9MouseClicked(evt);
+                searchButtonBaggageMouseClicked(evt);
             }
         });
-        ManagerSearch.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 120, -1, -1));
+        ManagerSearch.add(searchButtonBaggage, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 120, -1, -1));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
         jLabel11.setText("jLabel11");
@@ -373,17 +373,17 @@ public class Manager extends javax.swing.JFrame {
         });
         ManagerSearch.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 340, 140, -1));
 
-        Searchcustomer.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        Searchcustomer.setText("Search Customer");
-        ManagerSearch.add(Searchcustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 540, -1));
+        searchCustomer.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        searchCustomer.setText("Search Customer");
+        ManagerSearch.add(searchCustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 540, -1));
 
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/seoLogo.png"))); // NOI18N
-        jLabel23.addMouseListener(new java.awt.event.MouseAdapter() {
+        searchButtonCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/seoLogo.png"))); // NOI18N
+        searchButtonCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel23MouseClicked(evt);
+                searchButtonCustomerMouseClicked(evt);
             }
         });
-        ManagerSearch.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 200, -1, -1));
+        ManagerSearch.add(searchButtonCustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 200, -1, -1));
 
         jButton2.setText("View Al Baggage");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -824,17 +824,17 @@ public class Manager extends javax.swing.JFrame {
         logoutKnop.setBackground(new java.awt.Color(153, 51, 51));
     }//GEN-LAST:event_logoutKnopMouseExited
 
-    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+    private void searchButtonBaggageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchButtonBaggageMouseClicked
         Dbmanager dbm = new Dbmanager();
         QueryManager qm = new QueryManager(dbm);
         //Open database connection
 
         dbm.openConnection();
 
-        if (jTextField4.getText().equals("")) {
+        if (searchBaggage.getText().equals("")) {
             lld = qm.getBaggage("SELECT * from baggage");
         } else {
-            lld = qm.getBaggage("SELECT * FROM baggage WHERE baggageId = " + jTextField4.getText());
+            lld = qm.getBaggage("SELECT * FROM baggage WHERE baggageId = " + searchBaggage.getText());
         }
 
         DefaultTableModel model = new DefaultTableModel();
@@ -880,7 +880,7 @@ public class Manager extends javax.swing.JFrame {
         jPanel1.revalidate();
 
 
-    }//GEN-LAST:event_jLabel9MouseClicked
+    }//GEN-LAST:event_searchButtonBaggageMouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Dbmanager dbm = new Dbmanager();
@@ -889,10 +889,10 @@ public class Manager extends javax.swing.JFrame {
 
         dbm.openConnection();
 
-        if (jTextField4.getText().equals("")) {
+        if (searchBaggage.getText().equals("")) {
             lld = qm.getBaggage("SELECT * from baggage");
         } else {
-            lld = qm.getBaggage("SELECT * FROM baggage WHERE baggageId = " + jTextField4.getText());
+            lld = qm.getBaggage("SELECT * FROM baggage WHERE baggageId = " + searchBaggage.getText());
         }
 
         DefaultTableModel model = new DefaultTableModel();
@@ -1003,7 +1003,7 @@ public class Manager extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jLabel10MouseClicked
 
-    private void jLabel23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel23MouseClicked
+    private void searchButtonCustomerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchButtonCustomerMouseClicked
         Dbmanager dbm = new Dbmanager();
         QueryManager qm = new QueryManager(dbm);
         //Open database connection
@@ -1029,8 +1029,8 @@ public class Manager extends javax.swing.JFrame {
         if (jLabel5.getText().equals("Search Baggage")) {
             lldd = qm.getCustomersinfoo("SELECT * from customerinfo");
         } else {
-            lldd = qm.getCustomersinfoo("SELECT * FROM customerinfo WHERE name = '" + Searchcustomer.getText() + "'"
-                    + "OR lastname ='" + Searchcustomer.getText() + "';");
+            lldd = qm.getCustomersinfoo("SELECT * FROM customerinfo WHERE name = '" + searchCustomer.getText() + "'"
+                    + "OR lastname ='" + searchCustomer.getText() + "';");
         }
 
         for (Customerinfo cmm : lldd) {
@@ -1051,7 +1051,7 @@ public class Manager extends javax.swing.JFrame {
         jPanel1.revalidate();
 
 
-    }//GEN-LAST:event_jLabel23MouseClicked
+    }//GEN-LAST:event_searchButtonCustomerMouseClicked
 
     private void jCheckBox1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jCheckBox1KeyPressed
         // TODO add your handling code here:
@@ -1061,9 +1061,9 @@ public class Manager extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void searchBaggageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBaggageActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_searchBaggageActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
@@ -1124,7 +1124,7 @@ public class Manager extends javax.swing.JFrame {
 
         dbm.openConnection();
 
-        if (jTextField4.getText().equals("Search Baggage")) {
+        if (searchBaggage.getText().equals("Search Baggage")) {
             lld = qm.getBaggage("SELECT * from baggage");
         } else {
             lld = qm.getBaggage("SELECT * FROM baggage ");
@@ -1231,7 +1231,6 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JPanel ManagerSearch;
     private javax.swing.JPanel ManagerStatus;
     private javax.swing.JPanel Search;
-    private javax.swing.JTextField Searchcustomer;
     private javax.swing.JPanel Status;
     private javax.swing.JLabel StatusButton;
     private javax.swing.JLabel addressHome;
@@ -1266,7 +1265,6 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
@@ -1275,7 +1273,6 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JList jList2;
     private javax.swing.JList jList3;
     private javax.swing.JList jList4;
@@ -1284,7 +1281,6 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JLabel lAddressHome;
@@ -1298,7 +1294,11 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JPanel menu;
     private javax.swing.JLabel nameHome;
     private javax.swing.JLabel postalCodeHome;
+    private javax.swing.JTextField searchBaggage;
     private javax.swing.JLabel searchButton;
+    private javax.swing.JLabel searchButtonBaggage;
+    private javax.swing.JLabel searchButtonCustomer;
+    private javax.swing.JTextField searchCustomer;
     private javax.swing.JLabel tUsernameHome;
     private javax.swing.JLabel usernameHome;
     private javax.swing.JLabel welcomeText1;
