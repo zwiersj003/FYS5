@@ -106,7 +106,6 @@ public class Manager extends javax.swing.JFrame {
         Home = new javax.swing.JPanel();
         ManagerHome = new javax.swing.JPanel();
         welcomeText1 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
         usernameHome = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         emailHome = new javax.swing.JLabel();
@@ -243,11 +242,10 @@ public class Manager extends javax.swing.JFrame {
         ManagerHome.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         ManagerHome.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        welcomeText1.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        ManagerHome.add(welcomeText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, 310, 50));
-
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/5Pli3Pfm3V.jpg"))); // NOI18N
-        ManagerHome.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 500, 80));
+        welcomeText1.setFont(new java.awt.Font("Tahoma", 2, 30)); // NOI18N
+        welcomeText1.setText("Welcome,");
+        welcomeText1.setToolTipText("");
+        ManagerHome.add(welcomeText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 150, 50));
 
         usernameHome.setText("Username:");
         ManagerHome.add(usernameHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 90, 20));
@@ -1262,7 +1260,6 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;

@@ -133,7 +133,6 @@ private PopupMenu Tabel;
         Home = new javax.swing.JPanel();
         EmployeeHome = new javax.swing.JPanel();
         welcomeText = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         IDText = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
@@ -154,6 +153,7 @@ private PopupMenu Tabel;
         jLabel53 = new javax.swing.JLabel();
         jLabel54 = new javax.swing.JLabel();
         Backgroundlabel = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         Search = new javax.swing.JPanel();
         EmployeeSearch = new javax.swing.JPanel();
         SearchBaggage = new javax.swing.JTextField();
@@ -269,11 +269,9 @@ private PopupMenu Tabel;
         EmployeeHome.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         EmployeeHome.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        welcomeText.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        EmployeeHome.add(welcomeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, 310, 50));
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/5Pli3Pfm3V.jpg"))); // NOI18N
-        EmployeeHome.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 500, 80));
+        welcomeText.setFont(new java.awt.Font("Tahoma", 2, 30)); // NOI18N
+        welcomeText.setText("Welcome,");
+        EmployeeHome.add(welcomeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 80, 180, 50));
 
         IDText.setText("Username:");
         EmployeeHome.add(IDText, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 90, 20));
@@ -349,7 +347,10 @@ private PopupMenu Tabel;
         Backgroundlabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
         Backgroundlabel.setToolTipText("");
         Backgroundlabel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        EmployeeHome.add(Backgroundlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 980, 490));
+        EmployeeHome.add(Backgroundlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 430));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/5Pli3Pfm3V.jpg"))); // NOI18N
+        EmployeeHome.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 500, 80));
 
         Home.add(EmployeeHome, java.awt.BorderLayout.CENTER);
 
@@ -919,10 +920,7 @@ private PopupMenu Tabel;
             .addComponent(addBaggageButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(submitBaggageButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(helpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(menuLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(ManageBaggagee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(ManageBaggagee, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         menuLayout.setVerticalGroup(
             menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -933,8 +931,8 @@ private PopupMenu Tabel;
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(addBaggageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ManageBaggagee, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(ManageBaggagee, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(submitBaggageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(helpButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
