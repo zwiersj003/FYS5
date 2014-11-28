@@ -32,15 +32,15 @@ public class Manager extends javax.swing.JFrame {
 
     public void SetInfo(CreateAccount createaccount) {
         LoggedIN.setText("Logged in as: " + createaccount.accounttype);
-        jLabel63.setText(createaccount.username);
+        tUsernameHome.setText(createaccount.username);
         welcomeText1.setText("Welcome " + createaccount.username + ",");
-        jLabel70.setText("Not Set");
-        jLabel64.setText("Not Set");
-        jLabel65.setText("Not Set");
-        jLabel66.setText("Not Set");
-        jLabel67.setText("Not Set");
-        jLabel68.setText("Not Set");
-        jLabel69.setText("Not Set");
+        lNameHome.setText("Not Set");
+        lAddressHome.setText("Not Set");
+        lDateHome.setText("Not Set");
+        lCityHome.setText("Not Set");
+        lPostalCodeHome.setText("Not Set");
+        lCountryHome.setText("Not Set");
+        lEmailHome.setText("Not Set");
 
         if ("employee".equals(createaccount.accounttype)) {
             setVisible(true);
@@ -109,23 +109,23 @@ public class Manager extends javax.swing.JFrame {
         jLabel24 = new javax.swing.JLabel();
         usernameHome = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        jLabel53 = new javax.swing.JLabel();
-        jLabel57 = new javax.swing.JLabel();
-        jLabel58 = new javax.swing.JLabel();
-        jLabel59 = new javax.swing.JLabel();
+        emailHome = new javax.swing.JLabel();
+        countryHome = new javax.swing.JLabel();
+        postalCodeHome = new javax.swing.JLabel();
+        cityHome = new javax.swing.JLabel();
         dateHome = new javax.swing.JLabel();
         nameHome = new javax.swing.JLabel();
         addressHome = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jLabel63 = new javax.swing.JLabel();
-        jLabel64 = new javax.swing.JLabel();
-        jLabel65 = new javax.swing.JLabel();
-        jLabel66 = new javax.swing.JLabel();
-        jLabel67 = new javax.swing.JLabel();
-        jLabel68 = new javax.swing.JLabel();
-        jLabel69 = new javax.swing.JLabel();
-        jLabel70 = new javax.swing.JLabel();
+        editHome = new javax.swing.JToggleButton();
+        tUsernameHome = new javax.swing.JLabel();
+        lAddressHome = new javax.swing.JLabel();
+        lDateHome = new javax.swing.JLabel();
+        lCityHome = new javax.swing.JLabel();
+        lPostalCodeHome = new javax.swing.JLabel();
+        lCountryHome = new javax.swing.JLabel();
+        lEmailHome = new javax.swing.JLabel();
+        lNameHome = new javax.swing.JLabel();
         Backgroundlabel1 = new javax.swing.JLabel();
         Search = new javax.swing.JPanel();
         ManagerSearch = new javax.swing.JPanel();
@@ -255,17 +255,17 @@ public class Manager extends javax.swing.JFrame {
         jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vliegtuig_CorendonNL-2-stijgend.png"))); // NOI18N
         ManagerHome.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 160, 50));
 
-        jLabel53.setText("Email     :");
-        ManagerHome.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 290, -1, -1));
+        emailHome.setText("Email     :");
+        ManagerHome.add(emailHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 290, -1, -1));
 
-        jLabel57.setText("Country    :");
-        ManagerHome.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 260, 70, 20));
+        countryHome.setText("Country    :");
+        ManagerHome.add(countryHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 260, 70, 20));
 
-        jLabel58.setText("Zip/Postal code   :");
-        ManagerHome.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 230, 90, 20));
+        postalCodeHome.setText("Zip/Postal code   :");
+        ManagerHome.add(postalCodeHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 230, 90, 20));
 
-        jLabel59.setText("City     :");
-        ManagerHome.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 50, 20));
+        cityHome.setText("City     :");
+        ManagerHome.add(cityHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 50, 20));
 
         dateHome.setText("Date :");
         ManagerHome.add(dateHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, 60, 20));
@@ -280,45 +280,45 @@ public class Manager extends javax.swing.JFrame {
         jLabel26.setText("Profile :");
         ManagerHome.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 90, 40));
 
-        jToggleButton1.setText("Edit");
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+        editHome.setText("Edit");
+        editHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton1ActionPerformed(evt);
+                editHomeActionPerformed(evt);
             }
         });
-        ManagerHome.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 340, -1, -1));
+        ManagerHome.add(editHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 340, -1, -1));
 
-        jLabel63.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel63.setText("jLabel54");
-        ManagerHome.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, 90, 20));
+        tUsernameHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        tUsernameHome.setText("jLabel54");
+        ManagerHome.add(tUsernameHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, 90, 20));
 
-        jLabel64.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel64.setText("jLabel46");
-        ManagerHome.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 90, 20));
+        lAddressHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        lAddressHome.setText("jLabel46");
+        ManagerHome.add(lAddressHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 90, 20));
 
-        jLabel65.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel65.setText("jLabel46");
-        ManagerHome.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 90, 20));
+        lDateHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        lDateHome.setText("jLabel46");
+        ManagerHome.add(lDateHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 90, 20));
 
-        jLabel66.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel66.setText("jLabel46");
-        ManagerHome.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, 90, 20));
+        lCityHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        lCityHome.setText("jLabel46");
+        ManagerHome.add(lCityHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, 90, 20));
 
-        jLabel67.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel67.setText("jLabel46");
-        ManagerHome.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, 90, 20));
+        lPostalCodeHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        lPostalCodeHome.setText("jLabel46");
+        ManagerHome.add(lPostalCodeHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, 90, 20));
 
-        jLabel68.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel68.setText("jLabel46");
-        ManagerHome.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 260, 90, 20));
+        lCountryHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        lCountryHome.setText("jLabel46");
+        ManagerHome.add(lCountryHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 260, 90, 20));
 
-        jLabel69.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel69.setText("jLabel46");
-        ManagerHome.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 290, 90, 20));
+        lEmailHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        lEmailHome.setText("jLabel46");
+        ManagerHome.add(lEmailHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 290, 90, 20));
 
-        jLabel70.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel70.setText("jLabel46");
-        ManagerHome.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 90, 20));
+        lNameHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        lNameHome.setText("jLabel46");
+        ManagerHome.add(lNameHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 90, 20));
 
         Backgroundlabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
         Backgroundlabel1.setToolTipText("");
@@ -1173,9 +1173,9 @@ public class Manager extends javax.swing.JFrame {
         jPanel1.revalidate();
     }//GEN-LAST:event_jButton2MouseClicked
 
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+    private void editHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editHomeActionPerformed
         Employee.infoBox("No Permission, \nContact Administrator: \nEdo Tijoe ", "Error");
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
+    }//GEN-LAST:event_editHomeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1235,7 +1235,11 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JPanel Status;
     private javax.swing.JLabel StatusButton;
     private javax.swing.JLabel addressHome;
+    private javax.swing.JLabel cityHome;
+    private javax.swing.JLabel countryHome;
     private javax.swing.JLabel dateHome;
+    private javax.swing.JToggleButton editHome;
+    private javax.swing.JLabel emailHome;
     private javax.swing.JLabel helpButton1;
     private javax.swing.JLabel helpTitle6;
     private javax.swing.JLabel homeButton;
@@ -1269,20 +1273,8 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel53;
-    private javax.swing.JLabel jLabel57;
-    private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel63;
-    private javax.swing.JLabel jLabel64;
-    private javax.swing.JLabel jLabel65;
-    private javax.swing.JLabel jLabel66;
-    private javax.swing.JLabel jLabel67;
-    private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JList jList2;
     private javax.swing.JList jList3;
@@ -1295,11 +1287,19 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JLabel lAddressHome;
+    private javax.swing.JLabel lCityHome;
+    private javax.swing.JLabel lCountryHome;
+    private javax.swing.JLabel lDateHome;
+    private javax.swing.JLabel lEmailHome;
+    private javax.swing.JLabel lNameHome;
+    private javax.swing.JLabel lPostalCodeHome;
     private javax.swing.JLabel logoutKnop;
     private javax.swing.JPanel menu;
     private javax.swing.JLabel nameHome;
+    private javax.swing.JLabel postalCodeHome;
     private javax.swing.JLabel searchButton;
+    private javax.swing.JLabel tUsernameHome;
     private javax.swing.JLabel usernameHome;
     private javax.swing.JLabel welcomeText1;
     private org.jdesktop.beansbinding.BindingGroup bindingGroup;
