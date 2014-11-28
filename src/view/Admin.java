@@ -228,11 +228,11 @@ public class Admin extends javax.swing.JFrame {
 
         Name.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         Name.setText("Logged in as:");
-        getContentPane().add(Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 150, 40));
+        getContentPane().add(Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 150, 30));
 
         ID.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         ID.setText("Employee ID:");
-        getContentPane().add(ID, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 90, 130, 40));
+        getContentPane().add(ID, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 90, 130, 30));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 9));
         jPanel1.setLayout(new java.awt.BorderLayout());
@@ -510,7 +510,7 @@ public class Admin extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        AdminEdit1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 200, -1, -1));
+        AdminEdit1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, -1, -1));
 
         jLabel4.setText("Password :");
         AdminEdit1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 200, 70, 20));
@@ -546,7 +546,7 @@ public class Admin extends javax.swing.JFrame {
                 jButton8MouseClicked(evt);
             }
         });
-        AdminEdit1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 310, -1, -1));
+        AdminEdit1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 310, 60, -1));
 
         background1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
         background1.setToolTipText("");

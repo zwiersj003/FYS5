@@ -73,7 +73,8 @@ public static void infoBox(String infoMessage, String titleBar)
    
                               
   public void SetUser(CreateAccount createaccount) {
-        LoggedIN.setText("Logged in as: " +createaccount.accounttype);
+        loginAsEmployee.setText("Logged in as: " +createaccount.accounttype);
+        idAsEmployee.setText("Employee id: " +createaccount.username);
         nameEmployeeText.setText(createaccount.username);
         welcomeTekst.setText("Welcome " + createaccount.username+ "," );
         usernameEmployeeText.setText("Not Set");
@@ -91,7 +92,7 @@ public static void infoBox(String infoMessage, String titleBar)
             setVisible(false);
         }
     }
-    public ArrayList<Baggage> lld = new ArrayList();
+public ArrayList<Baggage> lld = new ArrayList();
 public JTable table;
 public JFrame frame = new JFrame();
 
@@ -112,10 +113,7 @@ private PopupMenu Tabel;
         frame.setLocationRelativeTo( null );
         jPanel1.removeAll();
         jPanel1.revalidate();
-        jPanel1.add(EmployeeHome);
-        
-       
-        
+        jPanel1.add(EmployeeHome);    
     }
 
     /**
@@ -128,7 +126,8 @@ private PopupMenu Tabel;
     private void initComponents() {
         bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
-        LoggedIN = new javax.swing.JLabel();
+        loginAsEmployee = new javax.swing.JLabel();
+        idAsEmployee = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         Home = new javax.swing.JPanel();
         EmployeeHome = new javax.swing.JPanel();
@@ -160,11 +159,11 @@ private PopupMenu Tabel;
         jLabel27 = new javax.swing.JLabel();
         SearchBaggage3 = new javax.swing.JTextField();
         jLabel50 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        viewAll = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jButton5 = new javax.swing.JButton();
-        AddBaggage = new javax.swing.JPanel();
+        submitRequest = new javax.swing.JPanel();
         EmpolyeeAddBaggage = new javax.swing.JPanel();
         titelEmployeeAdd = new javax.swing.JLabel();
         bagInfoEmployeeAdd = new javax.swing.JLabel();
@@ -197,6 +196,8 @@ private PopupMenu Tabel;
         countryEmployeeAddText = new javax.swing.JTextField();
         emailEmployeeAdd = new javax.swing.JLabel();
         emailEmployeeAddText = new javax.swing.JTextField();
+        flightEmployeeAdd = new javax.swing.JLabel();
+        flightEmployeeAddText = new javax.swing.JTextField();
         saveBagemployeeAdd = new javax.swing.JButton();
         saveCostumerEmployeeAdd = new javax.swing.JButton();
         backgroundEmployeeAdd = new javax.swing.JLabel();
@@ -212,7 +213,7 @@ private PopupMenu Tabel;
         titleEmployeeSubmit = new javax.swing.JLabel();
         bagInfoEmployeeSubmit = new javax.swing.JLabel();
         fligthEmployeeSubmit = new javax.swing.JLabel();
-        fligthEmployeeSubmitText = new javax.swing.JTextField();
+        bagIdEmployeeSubmitText = new javax.swing.JTextField();
         departmentEmployeeSubmit = new javax.swing.JLabel();
         departmentEmployeeSubmitText = new javax.swing.JTextField();
         colorEmployeeSubmit = new javax.swing.JLabel();
@@ -223,6 +224,8 @@ private PopupMenu Tabel;
         weigthEmployeeSubmitText = new javax.swing.JTextField();
         materialsEmployeeSubmit = new javax.swing.JLabel();
         materialsEmployeeSubmitText = new javax.swing.JTextField();
+        flightEmployeeAdd1 = new javax.swing.JLabel();
+        flightEmployeeAddText1 = new javax.swing.JTextField();
         descriptionEmployeeSubmit = new javax.swing.JLabel();
         discriptionEmployeeSubmitScrollpane = new javax.swing.JScrollPane();
         descriptionEmployeeSubmitText = new javax.swing.JTextPane();
@@ -233,7 +236,6 @@ private PopupMenu Tabel;
         SearchBaggage1 = new javax.swing.JTextField();
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
         menu = new javax.swing.JPanel();
         homeButton = new javax.swing.JLabel();
@@ -250,8 +252,13 @@ private PopupMenu Tabel;
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        LoggedIN.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        getContentPane().add(LoggedIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 290, 50));
+        loginAsEmployee.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        loginAsEmployee.setText("Logged in as:");
+        getContentPane().add(loginAsEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 320, 30));
+
+        idAsEmployee.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        idAsEmployee.setText("Employee ID:");
+        getContentPane().add(idAsEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 90, 280, 30));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 9));
@@ -267,7 +274,7 @@ private PopupMenu Tabel;
 
         welcomeTekst.setFont(new java.awt.Font("Tahoma", 2, 30)); // NOI18N
         welcomeTekst.setText("Welcome,");
-        EmployeeHome.add(welcomeTekst, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 80, 180, 50));
+        EmployeeHome.add(welcomeTekst, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 80, 370, 50));
 
         profileEmployee.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         profileEmployee.setText("Profile :");
@@ -348,7 +355,7 @@ private PopupMenu Tabel;
         backgroundEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
         backgroundEmployee.setToolTipText("");
         backgroundEmployee.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        EmployeeHome.add(backgroundEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 430));
+        EmployeeHome.add(backgroundEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 450));
 
         Home.add(EmployeeHome, java.awt.BorderLayout.CENTER);
 
@@ -394,13 +401,13 @@ private PopupMenu Tabel;
         });
         EmployeeSearch.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 120, -1, -1));
 
-        jButton4.setText("View all");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        viewAll.setText("View all");
+        viewAll.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                viewAllActionPerformed(evt);
             }
         });
-        EmployeeSearch.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 330, 120, -1));
+        EmployeeSearch.add(viewAll, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 330, 120, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
         jLabel3.setToolTipText("");
@@ -420,9 +427,9 @@ private PopupMenu Tabel;
 
         jPanel1.add(Search, "card3");
 
-        AddBaggage.setBackground(new java.awt.Color(255, 255, 255));
-        AddBaggage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 9));
-        AddBaggage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        submitRequest.setBackground(new java.awt.Color(255, 255, 255));
+        submitRequest.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 9));
+        submitRequest.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         EmpolyeeAddBaggage.setBackground(new java.awt.Color(153, 51, 51));
         EmpolyeeAddBaggage.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.gray, null, java.awt.Color.lightGray));
@@ -484,7 +491,7 @@ private PopupMenu Tabel;
         EmpolyeeAddBaggage.add(weigthEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 264, 80, -1));
 
         weightEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        weightEmployeeAddText.setText("Example: Black");
+        weightEmployeeAddText.setText("Example: 34 kg");
         weightEmployeeAddText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 weightEmployeeAddTextActionPerformed(evt);
@@ -601,6 +608,19 @@ private PopupMenu Tabel;
         emailEmployeeAddText.setText("Example: John@corendon.com");
         EmpolyeeAddBaggage.add(emailEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 330, 240, -1));
 
+        flightEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        flightEmployeeAdd.setText("Flight number :");
+        EmpolyeeAddBaggage.add(flightEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 80, 20));
+
+        flightEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        flightEmployeeAddText.setText("Example: 141453");
+        flightEmployeeAddText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                flightEmployeeAddTextActionPerformed(evt);
+            }
+        });
+        EmpolyeeAddBaggage.add(flightEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 120, -1));
+
         saveBagemployeeAdd.setText("Save & Exit");
         saveBagemployeeAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -623,9 +643,9 @@ private PopupMenu Tabel;
         backgroundEmployeeAdd.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         EmpolyeeAddBaggage.add(backgroundEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 440));
 
-        AddBaggage.add(EmpolyeeAddBaggage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        submitRequest.add(EmpolyeeAddBaggage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jPanel1.add(AddBaggage, "card4");
+        jPanel1.add(submitRequest, "card4");
 
         Help.setBackground(new java.awt.Color(255, 255, 255));
         Help.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 9));
@@ -672,20 +692,20 @@ private PopupMenu Tabel;
         bagInfoEmployeeSubmit.setText("Baggage information");
         EmployeeSumbitBaggage.add(bagInfoEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 250, -1));
 
-        fligthEmployeeSubmit.setText("Flight number :");
-        EmployeeSumbitBaggage.add(fligthEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, -1));
+        fligthEmployeeSubmit.setText("Baggage id :");
+        EmployeeSumbitBaggage.add(fligthEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, -1, -1));
 
-        fligthEmployeeSubmitText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        fligthEmployeeSubmitText.setText("Example: 141453");
-        fligthEmployeeSubmitText.addActionListener(new java.awt.event.ActionListener() {
+        bagIdEmployeeSubmitText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        bagIdEmployeeSubmitText.setText("Example: 141453");
+        bagIdEmployeeSubmitText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fligthEmployeeSubmitTextActionPerformed(evt);
+                bagIdEmployeeSubmitTextActionPerformed(evt);
             }
         });
-        EmployeeSumbitBaggage.add(fligthEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 120, -1));
+        EmployeeSumbitBaggage.add(bagIdEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 120, -1));
 
         departmentEmployeeSubmit.setText("Department :");
-        EmployeeSumbitBaggage.add(departmentEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, -1, -1));
+        EmployeeSumbitBaggage.add(departmentEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, -1, -1));
 
         departmentEmployeeSubmitText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         departmentEmployeeSubmitText.setText("Example: Home");
@@ -694,10 +714,10 @@ private PopupMenu Tabel;
                 departmentEmployeeSubmitTextActionPerformed(evt);
             }
         });
-        EmployeeSumbitBaggage.add(departmentEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 120, -1));
+        EmployeeSumbitBaggage.add(departmentEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 120, -1));
 
         colorEmployeeSubmit.setText("Color :");
-        EmployeeSumbitBaggage.add(colorEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 40, -1));
+        EmployeeSumbitBaggage.add(colorEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 40, -1));
 
         colorEmployeeSubmitText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         colorEmployeeSubmitText.setText("Example: Yellow");
@@ -706,10 +726,10 @@ private PopupMenu Tabel;
                 colorEmployeeSubmitTextActionPerformed(evt);
             }
         });
-        EmployeeSumbitBaggage.add(colorEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, 120, -1));
+        EmployeeSumbitBaggage.add(colorEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 120, -1));
 
         brandEmployeeSubmit.setText("Brand :");
-        EmployeeSumbitBaggage.add(brandEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, -1, -1));
+        EmployeeSumbitBaggage.add(brandEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, -1, -1));
 
         brandEmployeeSubmitText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         brandEmployeeSubmitText.setText("Example: Gucci");
@@ -718,10 +738,10 @@ private PopupMenu Tabel;
                 brandEmployeeSubmitTextActionPerformed(evt);
             }
         });
-        EmployeeSumbitBaggage.add(brandEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 120, -1));
+        EmployeeSumbitBaggage.add(brandEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 120, -1));
 
         weigthEmployeeSubmit.setText("Weight :");
-        EmployeeSumbitBaggage.add(weigthEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 330, -1, 20));
+        EmployeeSumbitBaggage.add(weigthEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, -1, 20));
 
         weigthEmployeeSubmitText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         weigthEmployeeSubmitText.setText("Example: 34KG");
@@ -730,10 +750,10 @@ private PopupMenu Tabel;
                 weigthEmployeeSubmitTextActionPerformed(evt);
             }
         });
-        EmployeeSumbitBaggage.add(weigthEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 330, 120, -1));
+        EmployeeSumbitBaggage.add(weigthEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, 120, -1));
 
         materialsEmployeeSubmit.setText("Materials :");
-        EmployeeSumbitBaggage.add(materialsEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, -1, 20));
+        EmployeeSumbitBaggage.add(materialsEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 320, -1, 20));
 
         materialsEmployeeSubmitText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         materialsEmployeeSubmitText.setText("Example: Leather");
@@ -742,14 +762,27 @@ private PopupMenu Tabel;
                 materialsEmployeeSubmitTextActionPerformed(evt);
             }
         });
-        EmployeeSumbitBaggage.add(materialsEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, 120, -1));
+        EmployeeSumbitBaggage.add(materialsEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, 120, -1));
+
+        flightEmployeeAdd1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        flightEmployeeAdd1.setText("Flight number :");
+        EmployeeSumbitBaggage.add(flightEmployeeAdd1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 350, 80, 20));
+
+        flightEmployeeAddText1.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        flightEmployeeAddText1.setText("Example: 141453");
+        flightEmployeeAddText1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                flightEmployeeAddText1ActionPerformed(evt);
+            }
+        });
+        EmployeeSumbitBaggage.add(flightEmployeeAddText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 120, -1));
 
         descriptionEmployeeSubmit.setText("Description :");
-        EmployeeSumbitBaggage.add(descriptionEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, -1, -1));
+        EmployeeSumbitBaggage.add(descriptionEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, -1, -1));
 
         discriptionEmployeeSubmitScrollpane.setViewportView(descriptionEmployeeSubmitText);
 
-        EmployeeSumbitBaggage.add(discriptionEmployeeSubmitScrollpane, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 260, 120));
+        EmployeeSumbitBaggage.add(discriptionEmployeeSubmitScrollpane, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 260, 120));
 
         saveEmployeeSubmit.setText("Save & Exit");
         saveEmployeeSubmit.addActionListener(new java.awt.event.ActionListener() {
@@ -791,9 +824,6 @@ private PopupMenu Tabel;
         jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
         jLabel43.setText("jLabel11");
         ManageBaggagePanel.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, 70));
-
-        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vliegtuig_CorendonNL-2-stijgend.png"))); // NOI18N
-        ManageBaggagePanel.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 160, 50));
 
         jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
         jLabel45.setToolTipText("");
@@ -847,7 +877,8 @@ private PopupMenu Tabel;
         addBaggageButton.setBackground(new java.awt.Color(255, 255, 255));
         addBaggageButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         addBaggageButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        addBaggageButton.setText("Add baggage");
+        addBaggageButton.setText("Submit request");
+        addBaggageButton.setAlignmentY(0.0F);
         addBaggageButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         addBaggageButton.setOpaque(true);
         addBaggageButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -902,6 +933,7 @@ private PopupMenu Tabel;
         ManageBaggagee.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ManageBaggagee.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ManageBaggagee.setText("Manage Baggage");
+        ManageBaggagee.setAlignmentY(0.0F);
         ManageBaggagee.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         ManageBaggagee.setOpaque(true);
         ManageBaggagee.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -933,7 +965,7 @@ private PopupMenu Tabel;
                 .addComponent(homeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(1, 1, 1)
                 .addComponent(addBaggageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ManageBaggagee, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -941,7 +973,7 @@ private PopupMenu Tabel;
                 .addComponent(submitBaggageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(helpButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 69, Short.MAX_VALUE))
+                .addGap(0, 74, Short.MAX_VALUE))
         );
 
         getContentPane().add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 180, 178, 410));
@@ -1035,7 +1067,7 @@ private PopupMenu Tabel;
     private void addBaggageButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addBaggageButtonMouseClicked
         jPanel1.removeAll();
         jPanel1.revalidate();
-        jPanel1.add(AddBaggage);
+        jPanel1.add(submitRequest);
         jPanel1.repaint();
         jPanel1.revalidate();
     }//GEN-LAST:event_addBaggageButtonMouseClicked
@@ -1108,9 +1140,9 @@ private PopupMenu Tabel;
         // TODO add your handling code here:
     }//GEN-LAST:event_departmentEmployeeSubmitTextActionPerformed
 
-    private void fligthEmployeeSubmitTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fligthEmployeeSubmitTextActionPerformed
+    private void bagIdEmployeeSubmitTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bagIdEmployeeSubmitTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fligthEmployeeSubmitTextActionPerformed
+    }//GEN-LAST:event_bagIdEmployeeSubmitTextActionPerformed
 
     private void shipaddressEmployeeAddTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shipaddressEmployeeAddTextActionPerformed
         // TODO add your handling code here:
@@ -1121,14 +1153,14 @@ private PopupMenu Tabel;
     }//GEN-LAST:event_adressEmployeeAddTextActionPerformed
 
     private void saveBagemployeeAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBagemployeeAddActionPerformed
-       Dbmanager dbm = new Dbmanager();
-            QueryManager qm = new QueryManager(dbm);
-            //open database connection
-            dbm.openConnection();
+        Dbmanager dbm = new Dbmanager();
+        QueryManager qm = new QueryManager(dbm);
+        //open database connection
+        dbm.openConnection();
            
-            Baggage baggage = new Baggage(bagIdEmployeeAddText.getText(),colorEmployeeAddText.getText() ,weightEmployeeAddText.getText(),brandEmployeeAddText.getText(), descriptionEmployeeAddTextbox.getText(),materialsEmployeeAddText.getText(),colorEmployeeAddText.getText()," ");
-            qm.insertBaggage(baggage);
-            Employee.infoBox("Succesfully Saved", "Saved");
+        Baggage baggage = new Baggage(bagIdEmployeeAddText.getText(), departmentEmployeeAddText.getText(),weightEmployeeAddText.getText(),brandEmployeeAddText.getText(), descriptionEmployeeAddTextbox.getText(),materialsEmployeeAddText.getText(),colorEmployeeAddText.getText(),flightEmployeeAddText.getText()," ");
+        qm.insertBaggage(baggage);
+        Employee.infoBox("Succesfully Saved", "Saved");
     }//GEN-LAST:event_saveBagemployeeAddActionPerformed
 
     private void saveEmployeeSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveEmployeeSubmitActionPerformed
@@ -1137,7 +1169,8 @@ private PopupMenu Tabel;
             //open database connection
             dbm.openConnection();
            
-            Baggage baggage = new Baggage(fligthEmployeeSubmitText.getText(),departmentEmployeeSubmitText.getText() ,colorEmployeeSubmitText.getText(),brandEmployeeSubmitText.getText(), weigthEmployeeSubmitText.getText(),materialsEmployeeSubmitText.getText(),descriptionEmployeeSubmitText.getText()," ");
+            
+            Baggage baggage = new Baggage(bagIdEmployeeSubmitText.getText(), flightEmployeeAddText1.getText(),departmentEmployeeSubmitText.getText() ,colorEmployeeSubmitText.getText(),brandEmployeeSubmitText.getText(), weigthEmployeeSubmitText.getText(),materialsEmployeeSubmitText.getText(),descriptionEmployeeSubmitText.getText()," ");
             qm.insertBaggage(baggage);
         Employee.infoBox("Succesfully Saved", "Saved");
     }//GEN-LAST:event_saveEmployeeSubmitActionPerformed
@@ -1184,7 +1217,6 @@ private PopupMenu Tabel;
         model.addColumn("status");
         
         // Append a row 
-
         for (Baggage ld : lld)
         {
             model.addRow(new Object[]
@@ -1193,13 +1225,13 @@ private PopupMenu Tabel;
             });
         }
         Container contentPane = this.getContentPane();
-         contentPane.setLayout(new BorderLayout());
-         contentPane.setSize(700, 500);
-         contentPane.setBounds(200, 20, 700, 500);
-         table.setSize(300, 150);
-         JScrollPane jScrollPane1 = new JScrollPane(table);
-         jScrollPane1.setSize(700, 500); 
-         Button a=new Button("HI");
+        contentPane.setLayout(new BorderLayout());
+        contentPane.setSize(700, 500);
+        contentPane.setBounds(200, 20, 700, 500);
+        table.setSize(300, 150);
+        JScrollPane jScrollPane1 = new JScrollPane(table);
+        jScrollPane1.setSize(700, 500); 
+        Button a = new Button("HI");
         jPanel1.removeAll();
         jPanel1.revalidate();   
         jPanel1.add(jScrollPane1);
@@ -1217,12 +1249,6 @@ private PopupMenu Tabel;
         jPanel1.add(EmployeeSearch);
         jPanel1.repaint();
         jPanel1.revalidate();
-       
-       
-            
-       
-        
-     
         
     }//GEN-LAST:event_jLabel9MouseClicked
 
@@ -1303,7 +1329,7 @@ private PopupMenu Tabel;
        
     }//GEN-LAST:event_jLabel50MouseClicked
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void viewAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewAllActionPerformed
         Dbmanager dbm = new Dbmanager();
         QueryManager qm = new QueryManager(dbm);
         //Open database connection
@@ -1356,7 +1382,7 @@ private PopupMenu Tabel;
         jPanel1.add(EmployeeSearch);
         jPanel1.repaint();
         jPanel1.revalidate();
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_viewAllActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
@@ -1371,6 +1397,14 @@ private PopupMenu Tabel;
         login.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_logoutKnopMouseClicked
+
+    private void flightEmployeeAddTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_flightEmployeeAddTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightEmployeeAddTextActionPerformed
+
+    private void flightEmployeeAddText1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_flightEmployeeAddText1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightEmployeeAddText1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1409,7 +1443,6 @@ private PopupMenu Tabel;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel AddBaggage;
     private javax.swing.JLabel Background;
     private javax.swing.JLabel DepartmentEmployeeAdd;
     private javax.swing.JPanel EmployeeHelp;
@@ -1419,7 +1452,6 @@ private PopupMenu Tabel;
     private javax.swing.JPanel EmpolyeeAddBaggage;
     private javax.swing.JPanel Help;
     private javax.swing.JPanel Home;
-    private javax.swing.JLabel LoggedIN;
     private javax.swing.JPanel Manage;
     private javax.swing.JPanel ManageBaggagePanel;
     private javax.swing.JLabel ManageBaggagee;
@@ -1438,6 +1470,7 @@ private PopupMenu Tabel;
     private javax.swing.JLabel backgroundEmployeeSubmit;
     private javax.swing.JLabel bagIdEmployeeAdd;
     private javax.swing.JTextField bagIdEmployeeAddText;
+    private javax.swing.JTextField bagIdEmployeeSubmitText;
     private javax.swing.JLabel bagInfoEmployeeAdd;
     private javax.swing.JLabel bagInfoEmployeeSubmit;
     private javax.swing.JLabel brandEmployeeAdd;
@@ -1471,11 +1504,14 @@ private PopupMenu Tabel;
     private javax.swing.JLabel emailEmployeeAdd;
     private javax.swing.JTextField emailEmployeeAddText;
     private javax.swing.JLabel emailEmployeeText;
+    private javax.swing.JLabel flightEmployeeAdd;
+    private javax.swing.JLabel flightEmployeeAdd1;
+    private javax.swing.JTextField flightEmployeeAddText;
+    private javax.swing.JTextField flightEmployeeAddText1;
     private javax.swing.JLabel fligthEmployeeSubmit;
-    private javax.swing.JTextField fligthEmployeeSubmitText;
     private javax.swing.JLabel helpButton;
     private javax.swing.JLabel homeButton;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JLabel idAsEmployee;
     private javax.swing.JButton jButton5;
     private javax.swing.JFileChooser jFileChooser1;
     private javax.swing.JLabel jLabel11;
@@ -1486,13 +1522,13 @@ private PopupMenu Tabel;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel loginAsEmployee;
     private javax.swing.JLabel logoutKnop;
     private javax.swing.JLabel materialsEmployeeAdd;
     private javax.swing.JTextField materialsEmployeeAddText;
@@ -1516,10 +1552,12 @@ private PopupMenu Tabel;
     private javax.swing.JLabel shipaddressEmployeeAdd;
     private javax.swing.JTextField shipaddressEmployeeAddText;
     private javax.swing.JLabel submitBaggageButton;
+    private javax.swing.JPanel submitRequest;
     private javax.swing.JLabel titelEmployeeAdd;
     private javax.swing.JLabel titleEmployeeSubmit;
     private javax.swing.JLabel usernameEmployee;
     private javax.swing.JLabel usernameEmployeeText;
+    private javax.swing.JButton viewAll;
     private javax.swing.JTextField weightEmployeeAddText;
     private javax.swing.JLabel weigthEmployeeAdd;
     private javax.swing.JLabel weigthEmployeeSubmit;
