@@ -140,7 +140,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
-                    <Component class="javax.swing.JList" name="jList4">
+                    <Component class="javax.swing.JList" name="resultGraphs">
                       <Properties>
                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                           <StringArray count="1">
@@ -151,7 +151,7 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JCheckBox" name="jCheckBox9">
+                <Component class="javax.swing.JCheckBox" name="cDayGraphs">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Day"/>
                   </Properties>
@@ -161,7 +161,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JCheckBox" name="jCheckBox10">
+                <Component class="javax.swing.JCheckBox" name="cMonthGraphs">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Month"/>
                   </Properties>
@@ -171,7 +171,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JCheckBox" name="jCheckBox11">
+                <Component class="javax.swing.JCheckBox" name="cYearGraphs">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Year"/>
                   </Properties>
@@ -949,18 +949,18 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
-                    <Component class="javax.swing.JList" name="jList3">
+                    <Component class="javax.swing.JList" name="searchResultsLogFiles">
                       <Properties>
                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                           <StringArray count="1">
-                            <StringItem index="0" value="Baggage status"/>
+                            <StringItem index="0" value="Log Files"/>
                           </StringArray>
                         </Property>
                       </Properties>
                     </Component>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JCheckBox" name="jCheckBox6">
+                <Component class="javax.swing.JCheckBox" name="cAllLogFiles">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="All"/>
                   </Properties>
@@ -970,7 +970,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JCheckBox" name="jCheckBox7">
+                <Component class="javax.swing.JCheckBox" name="cTimeLogFiles">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Time"/>
                   </Properties>
@@ -980,7 +980,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JCheckBox" name="jCheckBox8">
+                <Component class="javax.swing.JCheckBox" name="cUserLogFiles">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Users"/>
                   </Properties>
@@ -990,7 +990,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField6">
+                <Component class="javax.swing.JTextField" name="searchLogFiles">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Search"/>
                   </Properties>
@@ -1000,7 +1000,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel14">
+                <Component class="javax.swing.JLabel" name="searchButtonLogFiles">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Images/seoLogo.png"/>
