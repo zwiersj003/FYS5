@@ -17,7 +17,7 @@ public class Dbmanager {
             Class.forName("com.mysql.jdbc.Driver");
 
             String url = "jdbc:mysql://localhost:3306/fys";
-            String user = "root", pass = "root";
+            String user = "root", pass = "";
             System.out.println("Connected");
 
             /**

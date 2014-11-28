@@ -41,7 +41,7 @@ public class Login extends javax.swing.JFrame {
         bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        login = new javax.swing.JLabel();
         Mini = new javax.swing.JLabel();
         Exit = new javax.swing.JLabel();
         DragFrame = new javax.swing.JLabel();
@@ -55,30 +55,30 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setBackground(new java.awt.Color(179, 15, 22));
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(250, 250, 250));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("LOGIN");
-        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLabel1.setOpaque(true);
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        login.setBackground(new java.awt.Color(179, 15, 22));
+        login.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        login.setForeground(new java.awt.Color(250, 250, 250));
+        login.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        login.setText("LOGIN");
+        login.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        login.setOpaque(true);
+        login.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
+                loginMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel1MouseEntered(evt);
+                loginMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel1MouseExited(evt);
+                loginMouseExited(evt);
             }
         });
-        jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
+        login.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                jLabel1KeyPressed(evt);
+                loginKeyPressed(evt);
             }
         });
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(284, 230, 70, 30));
+        jPanel1.add(login, new org.netbeans.lib.awtextra.AbsoluteConstraints(284, 230, 70, 30));
 
         Mini.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Mini.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -164,15 +164,15 @@ public class Login extends javax.swing.JFrame {
         this.setLocation(x - xMouse, y - yMouse);
     }//GEN-LAST:event_DragFrameMouseDragged
 
-    private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
-        jLabel1.setBackground(new java.awt.Color(229, 65, 72));
-    }//GEN-LAST:event_jLabel1MouseEntered
+    private void loginMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginMouseEntered
+        login.setBackground(new java.awt.Color(229, 65, 72));
+    }//GEN-LAST:event_loginMouseEntered
 
-    private void jLabel1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseExited
-        jLabel1.setBackground(new java.awt.Color(179, 15, 22));
-    }//GEN-LAST:event_jLabel1MouseExited
+    private void loginMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginMouseExited
+        login.setBackground(new java.awt.Color(179, 15, 22));
+    }//GEN-LAST:event_loginMouseExited
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+    private void loginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginMouseClicked
         Dbmanager dbm = new Dbmanager();
         QueryManager qm = new QueryManager(dbm);
         //Open database connection
@@ -195,11 +195,11 @@ public class Login extends javax.swing.JFrame {
         }
 
 
-    }//GEN-LAST:event_jLabel1MouseClicked
+    }//GEN-LAST:event_loginMouseClicked
 
-    private void jLabel1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel1KeyPressed
+    private void loginKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loginKeyPressed
       
-    }//GEN-LAST:event_jLabel1KeyPressed
+    }//GEN-LAST:event_loginKeyPressed
 
     /**
      * @param args the command line arguments
@@ -241,8 +241,8 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel DragFrame;
     private javax.swing.JLabel Exit;
     private javax.swing.JLabel Mini;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel login;
     private javax.swing.JPasswordField password;
     private javax.swing.JTextField username;
     private org.jdesktop.beansbinding.BindingGroup bindingGroup;

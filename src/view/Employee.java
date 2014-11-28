@@ -74,15 +74,15 @@ public static void infoBox(String infoMessage, String titleBar)
                               
   public void SetUser(CreateAccount createaccount) {
         LoggedIN.setText("Logged in as: " +createaccount.accounttype);
-        jLabel54.setText(createaccount.username);
-        welcomeText.setText("Welcome " + createaccount.username+ "," );
-        jLabel46.setText("Not Set");
-        jLabel47.setText("Not Set");
-        jLabel48.setText("Not Set");
-        jLabel49.setText("Not Set");
-        jLabel51.setText("Not Set");
-        jLabel52.setText("Not Set");
-        jLabel53.setText("Not Set");
+        nameEmployeeText.setText(createaccount.username);
+        welcomeTekst.setText("Welcome " + createaccount.username+ "," );
+        usernameEmployeeText.setText("Not Set");
+        addressEmployeeText.setText("Not Set");
+        dateEmployeeText.setText("Not Set");
+        cityEmployeeText.setText("Not Set");
+        postalEmployeeText.setText("Not Set");
+        countryEmployeeText.setText("Not Set");
+        emailEmployeeText.setText("Not Set");
         
 
         if ("employee".equals(createaccount.accounttype)) {
@@ -132,28 +132,26 @@ private PopupMenu Tabel;
         jPanel1 = new javax.swing.JPanel();
         Home = new javax.swing.JPanel();
         EmployeeHome = new javax.swing.JPanel();
-        welcomeText = new javax.swing.JLabel();
-        IDText = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
-        jLabel40 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jLabel46 = new javax.swing.JLabel();
-        jLabel47 = new javax.swing.JLabel();
-        jLabel48 = new javax.swing.JLabel();
-        jLabel49 = new javax.swing.JLabel();
-        jLabel51 = new javax.swing.JLabel();
-        jLabel52 = new javax.swing.JLabel();
-        jLabel53 = new javax.swing.JLabel();
-        jLabel54 = new javax.swing.JLabel();
-        Backgroundlabel = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        welcomeTekst = new javax.swing.JLabel();
+        profileEmployee = new javax.swing.JLabel();
+        nameEmployee = new javax.swing.JLabel();
+        nameEmployeeText = new javax.swing.JLabel();
+        usernameEmployee = new javax.swing.JLabel();
+        usernameEmployeeText = new javax.swing.JLabel();
+        addressEmployee = new javax.swing.JLabel();
+        addressEmployeeText = new javax.swing.JLabel();
+        dateEmployee = new javax.swing.JLabel();
+        dateEmployeeText = new javax.swing.JLabel();
+        cityEmployee = new javax.swing.JLabel();
+        cityEmployeeText = new javax.swing.JLabel();
+        postalEmployee = new javax.swing.JLabel();
+        postalEmployeeText = new javax.swing.JLabel();
+        countryEmployee = new javax.swing.JLabel();
+        countryEmployeeText = new javax.swing.JLabel();
+        emailEmployee = new javax.swing.JLabel();
+        emailEmployeeText = new javax.swing.JLabel();
+        editEmployeeProfile = new javax.swing.JToggleButton();
+        backgroundEmployee = new javax.swing.JLabel();
         Search = new javax.swing.JPanel();
         EmployeeSearch = new javax.swing.JPanel();
         SearchBaggage = new javax.swing.JTextField();
@@ -168,41 +166,40 @@ private PopupMenu Tabel;
         jButton5 = new javax.swing.JButton();
         AddBaggage = new javax.swing.JPanel();
         EmpolyeeAddBaggage = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        description = new javax.swing.JTextField();
-        collor = new javax.swing.JTextField();
-        brand = new javax.swing.JTextField();
-        weight = new javax.swing.JTextField();
-        materials = new javax.swing.JTextField();
-        BaggageID = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        email = new javax.swing.JTextField();
-        addressEdit = new javax.swing.JLabel();
-        zipEdit = new javax.swing.JLabel();
-        emailEdit = new javax.swing.JLabel();
-        postal = new javax.swing.JTextField();
-        name = new javax.swing.JTextField();
-        countryEdit = new javax.swing.JLabel();
-        cityEdit = new javax.swing.JLabel();
-        shippingAdress = new javax.swing.JTextField();
-        city = new javax.swing.JTextField();
-        nameEdit = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        adress = new javax.swing.JTextField();
-        addressEdit1 = new javax.swing.JLabel();
-        country = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
-        Department1 = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        titelEmployeeAdd = new javax.swing.JLabel();
+        bagInfoEmployeeAdd = new javax.swing.JLabel();
+        persoInfoEmployeeAdd = new javax.swing.JLabel();
+        bagIdEmployeeAdd = new javax.swing.JLabel();
+        bagIdEmployeeAddText = new javax.swing.JTextField();
+        DepartmentEmployeeAdd = new javax.swing.JLabel();
+        departmentEmployeeAddText = new javax.swing.JTextField();
+        colorEmployeeAdd = new javax.swing.JLabel();
+        colorEmployeeAddText = new javax.swing.JTextField();
+        weigthEmployeeAdd = new javax.swing.JLabel();
+        weightEmployeeAddText = new javax.swing.JTextField();
+        brandEmployeeAdd = new javax.swing.JLabel();
+        brandEmployeeAddText = new javax.swing.JTextField();
+        materialsEmployeeAdd = new javax.swing.JLabel();
+        materialsEmployeeAddText = new javax.swing.JTextField();
+        descriptionEmployeeAdd = new javax.swing.JLabel();
+        descriptionEmployeeAddTextbox = new javax.swing.JTextField();
+        nameEmployeeAdd = new javax.swing.JLabel();
+        nameEmployeeAddText = new javax.swing.JTextField();
+        addressEmployeeAdd = new javax.swing.JLabel();
+        adressEmployeeAddText = new javax.swing.JTextField();
+        shipaddressEmployeeAdd = new javax.swing.JLabel();
+        shipaddressEmployeeAddText = new javax.swing.JTextField();
+        cityEmployeeAdd = new javax.swing.JLabel();
+        cityEmployeeAddText = new javax.swing.JTextField();
+        postalEmployeeAdd = new javax.swing.JLabel();
+        postalEmployeeAddText = new javax.swing.JTextField();
+        countryEmployeeAdd = new javax.swing.JLabel();
+        countryEmployeeAddText = new javax.swing.JTextField();
+        emailEmployeeAdd = new javax.swing.JLabel();
+        emailEmployeeAddText = new javax.swing.JTextField();
+        saveBagemployeeAdd = new javax.swing.JButton();
+        saveCostumerEmployeeAdd = new javax.swing.JButton();
+        backgroundEmployeeAdd = new javax.swing.JLabel();
         Help = new javax.swing.JPanel();
         EmployeeHelp = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
@@ -212,26 +209,25 @@ private PopupMenu Tabel;
         jLabel5 = new javax.swing.JLabel();
         SubmitBaggage = new javax.swing.JPanel();
         EmployeeSumbitBaggage = new javax.swing.JPanel();
-        materials1 = new javax.swing.JTextField();
-        weight1 = new javax.swing.JTextField();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        brand1 = new javax.swing.JTextField();
-        color1 = new javax.swing.JTextField();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        department1 = new javax.swing.JTextField();
-        Baggageid1 = new javax.swing.JTextField();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        description1 = new javax.swing.JTextPane();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        titleEmployeeSubmit = new javax.swing.JLabel();
+        bagInfoEmployeeSubmit = new javax.swing.JLabel();
+        fligthEmployeeSubmit = new javax.swing.JLabel();
+        fligthEmployeeSubmitText = new javax.swing.JTextField();
+        departmentEmployeeSubmit = new javax.swing.JLabel();
+        departmentEmployeeSubmitText = new javax.swing.JTextField();
+        colorEmployeeSubmit = new javax.swing.JLabel();
+        colorEmployeeSubmitText = new javax.swing.JTextField();
+        brandEmployeeSubmit = new javax.swing.JLabel();
+        brandEmployeeSubmitText = new javax.swing.JTextField();
+        weigthEmployeeSubmit = new javax.swing.JLabel();
+        weigthEmployeeSubmitText = new javax.swing.JTextField();
+        materialsEmployeeSubmit = new javax.swing.JLabel();
+        materialsEmployeeSubmitText = new javax.swing.JTextField();
+        descriptionEmployeeSubmit = new javax.swing.JLabel();
+        discriptionEmployeeSubmitScrollpane = new javax.swing.JScrollPane();
+        descriptionEmployeeSubmitText = new javax.swing.JTextPane();
+        saveEmployeeSubmit = new javax.swing.JButton();
+        backgroundEmployeeSubmit = new javax.swing.JLabel();
         Manage = new javax.swing.JPanel();
         ManageBaggagePanel = new javax.swing.JPanel();
         SearchBaggage1 = new javax.swing.JTextField();
@@ -269,88 +265,90 @@ private PopupMenu Tabel;
         EmployeeHome.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         EmployeeHome.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        welcomeText.setFont(new java.awt.Font("Tahoma", 2, 30)); // NOI18N
-        welcomeText.setText("Welcome,");
-        EmployeeHome.add(welcomeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 80, 180, 50));
+        welcomeTekst.setFont(new java.awt.Font("Tahoma", 2, 30)); // NOI18N
+        welcomeTekst.setText("Welcome,");
+        EmployeeHome.add(welcomeTekst, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 80, 180, 50));
 
-        IDText.setText("Username:");
-        EmployeeHome.add(IDText, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 90, 20));
+        profileEmployee.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        profileEmployee.setText("Profile :");
+        EmployeeHome.add(profileEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 90, 40));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vliegtuig_CorendonNL-2-stijgend.png"))); // NOI18N
-        EmployeeHome.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 160, 50));
+        nameEmployee.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        nameEmployee.setText("Name :");
+        EmployeeHome.add(nameEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 60, 20));
 
-        jLabel37.setText("Email     :");
-        EmployeeHome.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 290, -1, -1));
+        nameEmployeeText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        nameEmployeeText.setText("jLabel46");
+        EmployeeHome.add(nameEmployeeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 90, 20));
 
-        jLabel35.setText("Country    :");
-        EmployeeHome.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 260, 70, 20));
+        usernameEmployee.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        usernameEmployee.setText("Username :");
+        EmployeeHome.add(usernameEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 250, 60, 20));
 
-        jLabel36.setText("Zip/Postal code   :");
-        EmployeeHome.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 230, 90, 20));
+        usernameEmployeeText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        usernameEmployeeText.setText("jLabel46");
+        EmployeeHome.add(usernameEmployeeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 90, 20));
 
-        jLabel38.setText("City     :");
-        EmployeeHome.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 50, 20));
+        addressEmployee.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        addressEmployee.setText("Address :");
+        EmployeeHome.add(addressEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, 60, 20));
 
-        jLabel39.setText("Date :");
-        EmployeeHome.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, 60, 20));
+        addressEmployeeText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        addressEmployeeText.setText("jLabel46");
+        EmployeeHome.add(addressEmployeeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 90, 20));
 
-        jLabel40.setText("Name   :");
-        EmployeeHome.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, -1, 20));
+        dateEmployee.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        dateEmployee.setText("Date :");
+        EmployeeHome.add(dateEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, 60, 20));
 
-        jLabel41.setText("Address   :");
-        EmployeeHome.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, 60, 20));
+        dateEmployeeText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        dateEmployeeText.setText("jLabel46");
+        EmployeeHome.add(dateEmployeeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, 90, 20));
 
-        jLabel14.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel14.setText("Profile :");
-        EmployeeHome.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 90, 40));
+        cityEmployee.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        cityEmployee.setText("City :");
+        EmployeeHome.add(cityEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, 100, 20));
 
-        jToggleButton1.setText("Edit");
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+        cityEmployeeText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        cityEmployeeText.setText("jLabel46");
+        EmployeeHome.add(cityEmployeeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 210, 90, 20));
+
+        postalEmployee.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        postalEmployee.setText("Zip/Postal code :");
+        EmployeeHome.add(postalEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 250, 100, 20));
+
+        postalEmployeeText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        postalEmployeeText.setText("jLabel46");
+        EmployeeHome.add(postalEmployeeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 250, 90, 20));
+
+        countryEmployee.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        countryEmployee.setText("Country :");
+        EmployeeHome.add(countryEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 100, 20));
+
+        countryEmployeeText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        countryEmployeeText.setText("jLabel46");
+        EmployeeHome.add(countryEmployeeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 290, 90, 20));
+
+        emailEmployee.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        emailEmployee.setText("Email :");
+        EmployeeHome.add(emailEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, 100, 20));
+
+        emailEmployeeText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        emailEmployeeText.setText("jLabel46");
+        EmployeeHome.add(emailEmployeeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 330, 90, 20));
+
+        editEmployeeProfile.setText("Edit");
+        editEmployeeProfile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton1ActionPerformed(evt);
+                editEmployeeProfileActionPerformed(evt);
             }
         });
-        EmployeeHome.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 340, -1, -1));
+        EmployeeHome.add(editEmployeeProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 380, -1, -1));
 
-        jLabel46.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel46.setText("jLabel46");
-        EmployeeHome.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, 90, 20));
-
-        jLabel47.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel47.setText("jLabel46");
-        EmployeeHome.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 90, 20));
-
-        jLabel48.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel48.setText("jLabel46");
-        EmployeeHome.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 90, 20));
-
-        jLabel49.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel49.setText("jLabel46");
-        EmployeeHome.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, 90, 20));
-
-        jLabel51.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel51.setText("jLabel46");
-        EmployeeHome.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, 90, 20));
-
-        jLabel52.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel52.setText("jLabel46");
-        EmployeeHome.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 260, 90, 20));
-
-        jLabel53.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel53.setText("jLabel46");
-        EmployeeHome.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 290, 90, 20));
-
-        jLabel54.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel54.setText("jLabel46");
-        EmployeeHome.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 90, 20));
-
-        Backgroundlabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
-        Backgroundlabel.setToolTipText("");
-        Backgroundlabel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        EmployeeHome.add(Backgroundlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 430));
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/5Pli3Pfm3V.jpg"))); // NOI18N
-        EmployeeHome.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 500, 80));
+        backgroundEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
+        backgroundEmployee.setToolTipText("");
+        backgroundEmployee.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        EmployeeHome.add(backgroundEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 430));
 
         Home.add(EmployeeHome, java.awt.BorderLayout.CENTER);
 
@@ -375,7 +373,7 @@ private PopupMenu Tabel;
                 jLabel9MouseClicked(evt);
             }
         });
-        EmployeeSearch.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 200, -1, -1));
+        EmployeeSearch.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 196, 30, 40));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
         jLabel11.setText("jLabel11");
@@ -407,7 +405,7 @@ private PopupMenu Tabel;
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
         jLabel3.setToolTipText("");
         jLabel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        EmployeeSearch.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 971, 482));
+        EmployeeSearch.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 440));
         EmployeeSearch.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 250, 90, 90));
 
         jButton5.setText("View all bagaggel");
@@ -430,190 +428,200 @@ private PopupMenu Tabel;
         EmpolyeeAddBaggage.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.gray, null, java.awt.Color.lightGray));
         EmpolyeeAddBaggage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
-        jLabel13.setText("jLabel11");
-        EmpolyeeAddBaggage.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, 70));
+        titelEmployeeAdd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
+        titelEmployeeAdd.setText("jLabel11");
+        EmpolyeeAddBaggage.add(titelEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, 70));
 
-        jLabel1.setText("Department :");
-        EmpolyeeAddBaggage.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, -1, 20));
+        bagInfoEmployeeAdd.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        bagInfoEmployeeAdd.setText("Baggage information");
+        EmpolyeeAddBaggage.add(bagInfoEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 250, -1));
 
-        jLabel2.setText("Color :");
-        EmpolyeeAddBaggage.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 40, 20));
+        persoInfoEmployeeAdd.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        persoInfoEmployeeAdd.setText("Personal information");
+        EmpolyeeAddBaggage.add(persoInfoEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 100, 250, -1));
 
-        jLabel6.setText("Brand :");
-        EmpolyeeAddBaggage.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 50, 40));
+        bagIdEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        bagIdEmployeeAdd.setText("   BaggageId :");
+        EmpolyeeAddBaggage.add(bagIdEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 175, 80, 10));
 
-        jLabel8.setText("Description :");
-        EmpolyeeAddBaggage.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, -1, -1));
-
-        jLabel16.setText("Materials :");
-        EmpolyeeAddBaggage.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, 20));
-
-        jLabel17.setText("   BaggageId :");
-        EmpolyeeAddBaggage.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 80, 30));
-
-        jLabel18.setText("Weight :");
-        EmpolyeeAddBaggage.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, -1, 20));
-
-        description.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        description.setText("Example: yellow");
-        description.addActionListener(new java.awt.event.ActionListener() {
+        bagIdEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        bagIdEmployeeAddText.setText("Example: 3283852");
+        bagIdEmployeeAddText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                descriptionActionPerformed(evt);
+                bagIdEmployeeAddTextActionPerformed(evt);
             }
         });
-        EmpolyeeAddBaggage.add(description, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 120, -1));
+        EmpolyeeAddBaggage.add(bagIdEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 120, -1));
 
-        collor.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        collor.setText("Example: Black");
-        collor.addActionListener(new java.awt.event.ActionListener() {
+        DepartmentEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        DepartmentEmployeeAdd.setText("Department :");
+        EmpolyeeAddBaggage.add(DepartmentEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 205, 80, 10));
+
+        departmentEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        departmentEmployeeAddText.setText("Example: Home");
+        departmentEmployeeAddText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                collorActionPerformed(evt);
+                departmentEmployeeAddTextActionPerformed(evt);
             }
         });
-        EmpolyeeAddBaggage.add(collor, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 260, 120, -1));
+        EmpolyeeAddBaggage.add(departmentEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 120, -1));
 
-        brand.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        brand.setText("Example: Gucci");
-        brand.addActionListener(new java.awt.event.ActionListener() {
+        colorEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        colorEmployeeAdd.setText("Color :");
+        EmpolyeeAddBaggage.add(colorEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 235, 80, 10));
+
+        colorEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        colorEmployeeAddText.setText("Example: yellow");
+        colorEmployeeAddText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                brandActionPerformed(evt);
+                colorEmployeeAddTextActionPerformed(evt);
             }
         });
-        EmpolyeeAddBaggage.add(brand, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, 120, -1));
+        EmpolyeeAddBaggage.add(colorEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 120, -1));
 
-        weight.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        weight.setText("Example: 32KG");
-        weight.addActionListener(new java.awt.event.ActionListener() {
+        weigthEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        weigthEmployeeAdd.setText("Weight :");
+        EmpolyeeAddBaggage.add(weigthEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 264, 80, -1));
+
+        weightEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        weightEmployeeAddText.setText("Example: Black");
+        weightEmployeeAddText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                weightActionPerformed(evt);
+                weightEmployeeAddTextActionPerformed(evt);
             }
         });
-        EmpolyeeAddBaggage.add(weight, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 160, 110, 210));
+        EmpolyeeAddBaggage.add(weightEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 260, 120, -1));
 
-        materials.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        materials.setText("Example: leather");
-        materials.addActionListener(new java.awt.event.ActionListener() {
+        brandEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        brandEmployeeAdd.setText("Brand :");
+        EmpolyeeAddBaggage.add(brandEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 295, 80, 10));
+
+        brandEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        brandEmployeeAddText.setText("Example: Gucci");
+        brandEmployeeAddText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialsActionPerformed(evt);
+                brandEmployeeAddTextActionPerformed(evt);
             }
         });
-        EmpolyeeAddBaggage.add(materials, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 120, -1));
+        EmpolyeeAddBaggage.add(brandEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, 120, -1));
 
-        BaggageID.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        BaggageID.setText("Example: 3283852");
-        BaggageID.addActionListener(new java.awt.event.ActionListener() {
+        materialsEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        materialsEmployeeAdd.setText("Materials :");
+        EmpolyeeAddBaggage.add(materialsEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 325, 80, 10));
+
+        materialsEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        materialsEmployeeAddText.setText("Example: leather");
+        materialsEmployeeAddText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BaggageIDActionPerformed(evt);
+                materialsEmployeeAddTextActionPerformed(evt);
             }
         });
-        EmpolyeeAddBaggage.add(BaggageID, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 120, -1));
+        EmpolyeeAddBaggage.add(materialsEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 120, -1));
 
-        jButton1.setText("Save & Exit");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        descriptionEmployeeAdd.setText("Description :");
+        EmpolyeeAddBaggage.add(descriptionEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, -1, -1));
+
+        descriptionEmployeeAddTextbox.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        descriptionEmployeeAddTextbox.setText("Example: 32KG");
+        descriptionEmployeeAddTextbox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                descriptionEmployeeAddTextboxActionPerformed(evt);
             }
         });
-        EmpolyeeAddBaggage.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 390, -1, -1));
+        EmpolyeeAddBaggage.add(descriptionEmployeeAddTextbox, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, 120, 170));
 
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vliegtuig_CorendonNL-2-stijgend.png"))); // NOI18N
-        EmpolyeeAddBaggage.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 360, 160, 50));
+        nameEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        nameEmployeeAdd.setText("Name :");
+        EmpolyeeAddBaggage.add(nameEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 155, 90, 10));
 
-        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel31.setText("Personal information");
-        EmpolyeeAddBaggage.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 100, 250, -1));
-
-        email.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        email.setText("Example: John@corendon.com");
-        EmpolyeeAddBaggage.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 330, 240, -1));
-
-        addressEdit.setText("Ship address   :");
-        EmpolyeeAddBaggage.add(addressEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 210, 80, 20));
-
-        zipEdit.setText("Zip/Postal code   :");
-        EmpolyeeAddBaggage.add(zipEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 270, 90, 20));
-
-        emailEdit.setText("Email     :");
-        EmpolyeeAddBaggage.add(emailEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 330, -1, 30));
-
-        postal.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        postal.setText("Example: 1055GK");
-        EmpolyeeAddBaggage.add(postal, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 270, 240, -1));
-
-        name.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        name.setText("example: john");
-        name.addActionListener(new java.awt.event.ActionListener() {
+        nameEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        nameEmployeeAddText.setText("example: john");
+        nameEmployeeAddText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nameActionPerformed(evt);
+                nameEmployeeAddTextActionPerformed(evt);
             }
         });
-        EmpolyeeAddBaggage.add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, 240, -1));
+        EmpolyeeAddBaggage.add(nameEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, 240, -1));
 
-        countryEdit.setText("Country    :");
-        EmpolyeeAddBaggage.add(countryEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 300, 70, 20));
+        addressEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        addressEmployeeAdd.setText("Address :");
+        EmpolyeeAddBaggage.add(addressEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 185, 90, 10));
 
-        cityEdit.setText("City     :");
-        EmpolyeeAddBaggage.add(cityEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 50, 30));
-
-        shippingAdress.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        shippingAdress.setText("Example: Egidiusstraat");
-        shippingAdress.addActionListener(new java.awt.event.ActionListener() {
+        adressEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        adressEmployeeAddText.setText("Example: Egidiusstraat");
+        adressEmployeeAddText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                shippingAdressActionPerformed(evt);
+                adressEmployeeAddTextActionPerformed(evt);
             }
         });
-        EmpolyeeAddBaggage.add(shippingAdress, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 210, 240, -1));
+        EmpolyeeAddBaggage.add(adressEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 180, 240, -1));
 
-        city.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        city.setText("Example: Amsterdam");
-        EmpolyeeAddBaggage.add(city, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 240, 240, -1));
+        shipaddressEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        shipaddressEmployeeAdd.setText("Ship address :");
+        EmpolyeeAddBaggage.add(shipaddressEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 215, 90, 10));
 
-        nameEdit.setText("Name   :");
-        EmpolyeeAddBaggage.add(nameEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 150, -1, 20));
-
-        jLabel32.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel32.setText("Baggage information");
-        EmpolyeeAddBaggage.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 250, -1));
-
-        adress.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        adress.setText("Example: Egidiusstraat");
-        adress.addActionListener(new java.awt.event.ActionListener() {
+        shipaddressEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        shipaddressEmployeeAddText.setText("Example: Egidiusstraat");
+        shipaddressEmployeeAddText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adressActionPerformed(evt);
+                shipaddressEmployeeAddTextActionPerformed(evt);
             }
         });
-        EmpolyeeAddBaggage.add(adress, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 180, 240, -1));
+        EmpolyeeAddBaggage.add(shipaddressEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 210, 240, -1));
 
-        addressEdit1.setText("Address   :");
-        EmpolyeeAddBaggage.add(addressEdit1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 180, 60, 20));
+        cityEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        cityEmployeeAdd.setText("City :");
+        EmpolyeeAddBaggage.add(cityEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 245, 90, 10));
 
-        country.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        country.setText("Example: The Netherlands");
-        EmpolyeeAddBaggage.add(country, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 300, 240, -1));
+        cityEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        cityEmployeeAddText.setText("Example: Amsterdam");
+        EmpolyeeAddBaggage.add(cityEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 240, 240, -1));
 
-        jButton3.setText("Save & Exit");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        postalEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        postalEmployeeAdd.setText("Zip/Postal code :");
+        EmpolyeeAddBaggage.add(postalEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 275, 90, 10));
+
+        postalEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        postalEmployeeAddText.setText("Example: 1055GK");
+        EmpolyeeAddBaggage.add(postalEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 270, 240, -1));
+
+        countryEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        countryEmployeeAdd.setText("Country :");
+        EmpolyeeAddBaggage.add(countryEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 305, 90, 10));
+
+        countryEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        countryEmployeeAddText.setText("Example: The Netherlands");
+        EmpolyeeAddBaggage.add(countryEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 300, 240, -1));
+
+        emailEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        emailEmployeeAdd.setText("Email :");
+        EmpolyeeAddBaggage.add(emailEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 335, 90, 10));
+
+        emailEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        emailEmployeeAddText.setText("Example: John@corendon.com");
+        EmpolyeeAddBaggage.add(emailEmployeeAddText, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 330, 240, -1));
+
+        saveBagemployeeAdd.setText("Save & Exit");
+        saveBagemployeeAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                saveBagemployeeAddActionPerformed(evt);
             }
         });
-        EmpolyeeAddBaggage.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 390, -1, -1));
+        EmpolyeeAddBaggage.add(saveBagemployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 390, -1, -1));
 
-        Department1.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        Department1.setText("Example: Home");
-        Department1.addActionListener(new java.awt.event.ActionListener() {
+        saveCostumerEmployeeAdd.setText("Save & Exit");
+        saveCostumerEmployeeAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Department1ActionPerformed(evt);
+                saveCostumerEmployeeAddActionPerformed(evt);
             }
         });
-        EmpolyeeAddBaggage.add(Department1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 120, -1));
+        EmpolyeeAddBaggage.add(saveCostumerEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 390, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
-        jLabel4.setToolTipText("");
-        jLabel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        EmpolyeeAddBaggage.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 490));
+        backgroundEmployeeAdd.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        backgroundEmployeeAdd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
+        backgroundEmployeeAdd.setToolTipText("");
+        backgroundEmployeeAdd.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        EmpolyeeAddBaggage.add(backgroundEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 440));
 
         AddBaggage.add(EmpolyeeAddBaggage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -642,7 +650,7 @@ private PopupMenu Tabel;
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
         jLabel5.setToolTipText("");
         jLabel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        EmployeeHelp.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 971, 482));
+        EmployeeHelp.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 971, 440));
 
         Help.add(EmployeeHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 980, 490));
 
@@ -656,108 +664,105 @@ private PopupMenu Tabel;
         EmployeeSumbitBaggage.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.gray, null, java.awt.Color.lightGray));
         EmployeeSumbitBaggage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        materials1.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        materials1.setText("Example: Leather");
-        materials1.addActionListener(new java.awt.event.ActionListener() {
+        titleEmployeeSubmit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
+        titleEmployeeSubmit.setText("jLabel11");
+        EmployeeSumbitBaggage.add(titleEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, 70));
+
+        bagInfoEmployeeSubmit.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        bagInfoEmployeeSubmit.setText("Baggage information");
+        EmployeeSumbitBaggage.add(bagInfoEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 250, -1));
+
+        fligthEmployeeSubmit.setText("Flight number :");
+        EmployeeSumbitBaggage.add(fligthEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, -1));
+
+        fligthEmployeeSubmitText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        fligthEmployeeSubmitText.setText("Example: 141453");
+        fligthEmployeeSubmitText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materials1ActionPerformed(evt);
+                fligthEmployeeSubmitTextActionPerformed(evt);
             }
         });
-        EmployeeSumbitBaggage.add(materials1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, 120, -1));
+        EmployeeSumbitBaggage.add(fligthEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 120, -1));
 
-        weight1.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        weight1.setText("Example: 34KG");
-        weight1.addActionListener(new java.awt.event.ActionListener() {
+        departmentEmployeeSubmit.setText("Department :");
+        EmployeeSumbitBaggage.add(departmentEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, -1, -1));
+
+        departmentEmployeeSubmitText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        departmentEmployeeSubmitText.setText("Example: Home");
+        departmentEmployeeSubmitText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                weight1ActionPerformed(evt);
+                departmentEmployeeSubmitTextActionPerformed(evt);
             }
         });
-        EmployeeSumbitBaggage.add(weight1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 330, 120, -1));
+        EmployeeSumbitBaggage.add(departmentEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 120, -1));
 
-        jLabel19.setText("Materials :");
-        EmployeeSumbitBaggage.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, -1, 20));
+        colorEmployeeSubmit.setText("Color :");
+        EmployeeSumbitBaggage.add(colorEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 40, -1));
 
-        jLabel20.setText("Weight :");
-        EmployeeSumbitBaggage.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 330, -1, 20));
-
-        jLabel21.setText("Brand :");
-        EmployeeSumbitBaggage.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, -1, -1));
-
-        brand1.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        brand1.setText("Example: Gucci");
-        brand1.addActionListener(new java.awt.event.ActionListener() {
+        colorEmployeeSubmitText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        colorEmployeeSubmitText.setText("Example: Yellow");
+        colorEmployeeSubmitText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                brand1ActionPerformed(evt);
+                colorEmployeeSubmitTextActionPerformed(evt);
             }
         });
-        EmployeeSumbitBaggage.add(brand1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 120, -1));
+        EmployeeSumbitBaggage.add(colorEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, 120, -1));
 
-        color1.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        color1.setText("Example: Yellow");
-        color1.addActionListener(new java.awt.event.ActionListener() {
+        brandEmployeeSubmit.setText("Brand :");
+        EmployeeSumbitBaggage.add(brandEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, -1, -1));
+
+        brandEmployeeSubmitText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        brandEmployeeSubmitText.setText("Example: Gucci");
+        brandEmployeeSubmitText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                color1ActionPerformed(evt);
+                brandEmployeeSubmitTextActionPerformed(evt);
             }
         });
-        EmployeeSumbitBaggage.add(color1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, 120, -1));
+        EmployeeSumbitBaggage.add(brandEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 120, -1));
 
-        jLabel22.setText("Color :");
-        EmployeeSumbitBaggage.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 40, -1));
+        weigthEmployeeSubmit.setText("Weight :");
+        EmployeeSumbitBaggage.add(weigthEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 330, -1, 20));
 
-        jLabel23.setText("Department :");
-        EmployeeSumbitBaggage.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, -1, -1));
-
-        department1.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        department1.setText("Example: Home");
-        department1.addActionListener(new java.awt.event.ActionListener() {
+        weigthEmployeeSubmitText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        weigthEmployeeSubmitText.setText("Example: 34KG");
+        weigthEmployeeSubmitText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                department1ActionPerformed(evt);
+                weigthEmployeeSubmitTextActionPerformed(evt);
             }
         });
-        EmployeeSumbitBaggage.add(department1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 120, -1));
+        EmployeeSumbitBaggage.add(weigthEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 330, 120, -1));
 
-        Baggageid1.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        Baggageid1.setText("Example: 141453");
-        Baggageid1.addActionListener(new java.awt.event.ActionListener() {
+        materialsEmployeeSubmit.setText("Materials :");
+        EmployeeSumbitBaggage.add(materialsEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, -1, 20));
+
+        materialsEmployeeSubmitText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        materialsEmployeeSubmitText.setText("Example: Leather");
+        materialsEmployeeSubmitText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Baggageid1ActionPerformed(evt);
+                materialsEmployeeSubmitTextActionPerformed(evt);
             }
         });
-        EmployeeSumbitBaggage.add(Baggageid1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 120, -1));
+        EmployeeSumbitBaggage.add(materialsEmployeeSubmitText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, 120, -1));
 
-        jLabel24.setText("Flight number :");
-        EmployeeSumbitBaggage.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, -1));
+        descriptionEmployeeSubmit.setText("Description :");
+        EmployeeSumbitBaggage.add(descriptionEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, -1, -1));
 
-        jLabel25.setText("Description :");
-        EmployeeSumbitBaggage.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, -1, -1));
+        discriptionEmployeeSubmitScrollpane.setViewportView(descriptionEmployeeSubmitText);
 
-        jButton2.setText("Save & Exit");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        EmployeeSumbitBaggage.add(discriptionEmployeeSubmitScrollpane, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 260, 120));
+
+        saveEmployeeSubmit.setText("Save & Exit");
+        saveEmployeeSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                saveEmployeeSubmitActionPerformed(evt);
             }
         });
-        EmployeeSumbitBaggage.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 400, -1, -1));
+        EmployeeSumbitBaggage.add(saveEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 400, -1, -1));
 
-        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
-        jLabel26.setText("jLabel11");
-        EmployeeSumbitBaggage.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, 70));
-
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vliegtuig_CorendonNL-2-stijgend.png"))); // NOI18N
-        EmployeeSumbitBaggage.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 160, 50));
-
-        jScrollPane5.setViewportView(description1);
-
-        EmployeeSumbitBaggage.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 260, 120));
-
-        jLabel33.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel33.setText("Baggage information");
-        EmployeeSumbitBaggage.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 250, -1));
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
-        jLabel7.setToolTipText("");
-        jLabel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        EmployeeSumbitBaggage.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 940, 482));
+        backgroundEmployeeSubmit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
+        backgroundEmployeeSubmit.setToolTipText("");
+        backgroundEmployeeSubmit.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        EmployeeSumbitBaggage.add(backgroundEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 440));
 
         SubmitBaggage.add(EmployeeSumbitBaggage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 980, 490));
 
@@ -793,7 +798,7 @@ private PopupMenu Tabel;
         jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
         jLabel45.setToolTipText("");
         jLabel45.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        ManageBaggagePanel.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 971, 482));
+        ManageBaggagePanel.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 450));
 
         Manage.add(ManageBaggagePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 980, 500));
 
@@ -1059,97 +1064,97 @@ private PopupMenu Tabel;
         logoutKnop.setBackground(new java.awt.Color(153,51,51));
     }//GEN-LAST:event_logoutKnopMouseExited
 
-    private void descriptionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_descriptionActionPerformed
+    private void colorEmployeeAddTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colorEmployeeAddTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_descriptionActionPerformed
+    }//GEN-LAST:event_colorEmployeeAddTextActionPerformed
 
-    private void collorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_collorActionPerformed
+    private void weightEmployeeAddTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_weightEmployeeAddTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_collorActionPerformed
+    }//GEN-LAST:event_weightEmployeeAddTextActionPerformed
 
-    private void brandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brandActionPerformed
+    private void brandEmployeeAddTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brandEmployeeAddTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_brandActionPerformed
+    }//GEN-LAST:event_brandEmployeeAddTextActionPerformed
 
-    private void weightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_weightActionPerformed
+    private void descriptionEmployeeAddTextboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_descriptionEmployeeAddTextboxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_weightActionPerformed
+    }//GEN-LAST:event_descriptionEmployeeAddTextboxActionPerformed
 
-    private void materialsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialsActionPerformed
+    private void materialsEmployeeAddTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialsEmployeeAddTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_materialsActionPerformed
+    }//GEN-LAST:event_materialsEmployeeAddTextActionPerformed
 
-    private void BaggageIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BaggageIDActionPerformed
+    private void bagIdEmployeeAddTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bagIdEmployeeAddTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BaggageIDActionPerformed
+    }//GEN-LAST:event_bagIdEmployeeAddTextActionPerformed
 
-    private void materials1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materials1ActionPerformed
+    private void materialsEmployeeSubmitTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialsEmployeeSubmitTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_materials1ActionPerformed
+    }//GEN-LAST:event_materialsEmployeeSubmitTextActionPerformed
 
-    private void weight1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_weight1ActionPerformed
+    private void weigthEmployeeSubmitTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_weigthEmployeeSubmitTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_weight1ActionPerformed
+    }//GEN-LAST:event_weigthEmployeeSubmitTextActionPerformed
 
-    private void brand1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brand1ActionPerformed
+    private void brandEmployeeSubmitTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brandEmployeeSubmitTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_brand1ActionPerformed
+    }//GEN-LAST:event_brandEmployeeSubmitTextActionPerformed
 
-    private void color1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_color1ActionPerformed
+    private void colorEmployeeSubmitTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colorEmployeeSubmitTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_color1ActionPerformed
+    }//GEN-LAST:event_colorEmployeeSubmitTextActionPerformed
 
-    private void department1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_department1ActionPerformed
+    private void departmentEmployeeSubmitTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_departmentEmployeeSubmitTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_department1ActionPerformed
+    }//GEN-LAST:event_departmentEmployeeSubmitTextActionPerformed
 
-    private void Baggageid1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Baggageid1ActionPerformed
+    private void fligthEmployeeSubmitTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fligthEmployeeSubmitTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Baggageid1ActionPerformed
+    }//GEN-LAST:event_fligthEmployeeSubmitTextActionPerformed
 
-    private void shippingAdressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shippingAdressActionPerformed
+    private void shipaddressEmployeeAddTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shipaddressEmployeeAddTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_shippingAdressActionPerformed
+    }//GEN-LAST:event_shipaddressEmployeeAddTextActionPerformed
 
-    private void adressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adressActionPerformed
+    private void adressEmployeeAddTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adressEmployeeAddTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_adressActionPerformed
+    }//GEN-LAST:event_adressEmployeeAddTextActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void saveBagemployeeAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBagemployeeAddActionPerformed
        Dbmanager dbm = new Dbmanager();
             QueryManager qm = new QueryManager(dbm);
             //open database connection
             dbm.openConnection();
            
-            Baggage baggage = new Baggage(BaggageID.getText(),description.getText() ,collor.getText(),brand.getText(), weight.getText(),materials.getText(),description.getText()," ");
+            Baggage baggage = new Baggage(bagIdEmployeeAddText.getText(),colorEmployeeAddText.getText() ,weightEmployeeAddText.getText(),brandEmployeeAddText.getText(), descriptionEmployeeAddTextbox.getText(),materialsEmployeeAddText.getText(),colorEmployeeAddText.getText()," ");
             qm.insertBaggage(baggage);
             Employee.infoBox("Succesfully Saved", "Saved");
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_saveBagemployeeAddActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void saveEmployeeSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveEmployeeSubmitActionPerformed
         Dbmanager dbm = new Dbmanager();   
         QueryManager qm = new QueryManager(dbm);
             //open database connection
             dbm.openConnection();
            
-            Baggage baggage = new Baggage(Baggageid1.getText(),department1.getText() ,color1.getText(),brand1.getText(), weight1.getText(),materials1.getText(),description1.getText()," ");
+            Baggage baggage = new Baggage(fligthEmployeeSubmitText.getText(),departmentEmployeeSubmitText.getText() ,colorEmployeeSubmitText.getText(),brandEmployeeSubmitText.getText(), weigthEmployeeSubmitText.getText(),materialsEmployeeSubmitText.getText(),descriptionEmployeeSubmitText.getText()," ");
             qm.insertBaggage(baggage);
         Employee.infoBox("Succesfully Saved", "Saved");
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_saveEmployeeSubmitActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void saveCostumerEmployeeAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveCostumerEmployeeAddActionPerformed
        Dbmanager dbm = new Dbmanager();
             QueryManager qm = new QueryManager(dbm);
             //open database connection
             dbm.openConnection();
            
-            Customerinfo customerinfo = new Customerinfo (name.getText(),adress.getText(),shippingAdress.getText() ,city.getText(),postal.getText(),country.getText(),email.getText());
+            Customerinfo customerinfo = new Customerinfo (nameEmployeeAddText.getText(),adressEmployeeAddText.getText(),shipaddressEmployeeAddText.getText() ,cityEmployeeAddText.getText(),postalEmployeeAddText.getText(),countryEmployeeAddText.getText(),emailEmployeeAddText.getText());
             qm.insertcutomerinfo(customerinfo);
             Employee.infoBox("Succesfully Saved", "Saved");
-    }//GEN-LAST:event_jButton3ActionPerformed
-    private void nameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameActionPerformed
+    }//GEN-LAST:event_saveCostumerEmployeeAddActionPerformed
+    private void nameEmployeeAddTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameEmployeeAddTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_nameActionPerformed
+    }//GEN-LAST:event_nameEmployeeAddTextActionPerformed
            
 
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
@@ -1221,9 +1226,9 @@ private PopupMenu Tabel;
         
     }//GEN-LAST:event_jLabel9MouseClicked
 
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+    private void editEmployeeProfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editEmployeeProfileActionPerformed
      Employee.infoBox("No Permission, \nContact Administrator: \nRichard ", "Error");
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
+    }//GEN-LAST:event_editEmployeeProfileActionPerformed
 
     private void ManageBaggageeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBaggageeMouseClicked
         jPanel1.removeAll();
@@ -1357,9 +1362,9 @@ private PopupMenu Tabel;
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void Department1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Department1ActionPerformed
+    private void departmentEmployeeAddTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_departmentEmployeeAddTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Department1ActionPerformed
+    }//GEN-LAST:event_departmentEmployeeAddTextActionPerformed
 
     private void logoutKnopMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoutKnopMouseClicked
    Login login = new Login();
@@ -1406,10 +1411,7 @@ private PopupMenu Tabel;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel AddBaggage;
     private javax.swing.JLabel Background;
-    private javax.swing.JLabel Backgroundlabel;
-    private javax.swing.JTextField BaggageID;
-    private javax.swing.JTextField Baggageid1;
-    private javax.swing.JTextField Department1;
+    private javax.swing.JLabel DepartmentEmployeeAdd;
     private javax.swing.JPanel EmployeeHelp;
     private javax.swing.JPanel EmployeeHome;
     private javax.swing.JPanel EmployeeSearch;
@@ -1417,7 +1419,6 @@ private PopupMenu Tabel;
     private javax.swing.JPanel EmpolyeeAddBaggage;
     private javax.swing.JPanel Help;
     private javax.swing.JPanel Home;
-    private javax.swing.JLabel IDText;
     private javax.swing.JLabel LoggedIN;
     private javax.swing.JPanel Manage;
     private javax.swing.JPanel ManageBaggagePanel;
@@ -1428,102 +1429,102 @@ private PopupMenu Tabel;
     private javax.swing.JTextField SearchBaggage3;
     private javax.swing.JPanel SubmitBaggage;
     private javax.swing.JLabel addBaggageButton;
-    private javax.swing.JLabel addressEdit;
-    private javax.swing.JLabel addressEdit1;
-    private javax.swing.JTextField adress;
-    private javax.swing.JTextField brand;
-    private javax.swing.JTextField brand1;
-    private javax.swing.JTextField city;
-    private javax.swing.JLabel cityEdit;
-    private javax.swing.JTextField collor;
-    private javax.swing.JTextField color1;
-    private javax.swing.JTextField country;
-    private javax.swing.JLabel countryEdit;
-    private javax.swing.JTextField department1;
-    private javax.swing.JTextField description;
-    private javax.swing.JTextPane description1;
-    private javax.swing.JTextField email;
-    private javax.swing.JLabel emailEdit;
+    private javax.swing.JLabel addressEmployee;
+    private javax.swing.JLabel addressEmployeeAdd;
+    private javax.swing.JLabel addressEmployeeText;
+    private javax.swing.JTextField adressEmployeeAddText;
+    private javax.swing.JLabel backgroundEmployee;
+    private javax.swing.JLabel backgroundEmployeeAdd;
+    private javax.swing.JLabel backgroundEmployeeSubmit;
+    private javax.swing.JLabel bagIdEmployeeAdd;
+    private javax.swing.JTextField bagIdEmployeeAddText;
+    private javax.swing.JLabel bagInfoEmployeeAdd;
+    private javax.swing.JLabel bagInfoEmployeeSubmit;
+    private javax.swing.JLabel brandEmployeeAdd;
+    private javax.swing.JTextField brandEmployeeAddText;
+    private javax.swing.JLabel brandEmployeeSubmit;
+    private javax.swing.JTextField brandEmployeeSubmitText;
+    private javax.swing.JLabel cityEmployee;
+    private javax.swing.JLabel cityEmployeeAdd;
+    private javax.swing.JTextField cityEmployeeAddText;
+    private javax.swing.JLabel cityEmployeeText;
+    private javax.swing.JLabel colorEmployeeAdd;
+    private javax.swing.JTextField colorEmployeeAddText;
+    private javax.swing.JLabel colorEmployeeSubmit;
+    private javax.swing.JTextField colorEmployeeSubmitText;
+    private javax.swing.JLabel countryEmployee;
+    private javax.swing.JLabel countryEmployeeAdd;
+    private javax.swing.JTextField countryEmployeeAddText;
+    private javax.swing.JLabel countryEmployeeText;
+    private javax.swing.JLabel dateEmployee;
+    private javax.swing.JLabel dateEmployeeText;
+    private javax.swing.JTextField departmentEmployeeAddText;
+    private javax.swing.JLabel departmentEmployeeSubmit;
+    private javax.swing.JTextField departmentEmployeeSubmitText;
+    private javax.swing.JLabel descriptionEmployeeAdd;
+    private javax.swing.JTextField descriptionEmployeeAddTextbox;
+    private javax.swing.JLabel descriptionEmployeeSubmit;
+    private javax.swing.JTextPane descriptionEmployeeSubmitText;
+    private javax.swing.JScrollPane discriptionEmployeeSubmitScrollpane;
+    private javax.swing.JToggleButton editEmployeeProfile;
+    private javax.swing.JLabel emailEmployee;
+    private javax.swing.JLabel emailEmployeeAdd;
+    private javax.swing.JTextField emailEmployeeAddText;
+    private javax.swing.JLabel emailEmployeeText;
+    private javax.swing.JLabel fligthEmployeeSubmit;
+    private javax.swing.JTextField fligthEmployeeSubmitText;
     private javax.swing.JLabel helpButton;
     private javax.swing.JLabel homeButton;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JFileChooser jFileChooser1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel53;
-    private javax.swing.JLabel jLabel54;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JLabel logoutKnop;
-    private javax.swing.JTextField materials;
-    private javax.swing.JTextField materials1;
+    private javax.swing.JLabel materialsEmployeeAdd;
+    private javax.swing.JTextField materialsEmployeeAddText;
+    private javax.swing.JLabel materialsEmployeeSubmit;
+    private javax.swing.JTextField materialsEmployeeSubmitText;
     private javax.swing.JPanel menu;
-    private javax.swing.JTextField name;
-    private javax.swing.JLabel nameEdit;
-    private javax.swing.JTextField postal;
+    private javax.swing.JLabel nameEmployee;
+    private javax.swing.JLabel nameEmployeeAdd;
+    private javax.swing.JTextField nameEmployeeAddText;
+    private javax.swing.JLabel nameEmployeeText;
+    private javax.swing.JLabel persoInfoEmployeeAdd;
+    private javax.swing.JLabel postalEmployee;
+    private javax.swing.JLabel postalEmployeeAdd;
+    private javax.swing.JTextField postalEmployeeAddText;
+    private javax.swing.JLabel postalEmployeeText;
+    private javax.swing.JLabel profileEmployee;
+    private javax.swing.JButton saveBagemployeeAdd;
+    private javax.swing.JButton saveCostumerEmployeeAdd;
+    private javax.swing.JButton saveEmployeeSubmit;
     private javax.swing.JLabel searchButton;
-    private javax.swing.JTextField shippingAdress;
+    private javax.swing.JLabel shipaddressEmployeeAdd;
+    private javax.swing.JTextField shipaddressEmployeeAddText;
     private javax.swing.JLabel submitBaggageButton;
-    private javax.swing.JTextField weight;
-    private javax.swing.JTextField weight1;
-    private javax.swing.JLabel welcomeText;
-    private javax.swing.JLabel zipEdit;
+    private javax.swing.JLabel titelEmployeeAdd;
+    private javax.swing.JLabel titleEmployeeSubmit;
+    private javax.swing.JLabel usernameEmployee;
+    private javax.swing.JLabel usernameEmployeeText;
+    private javax.swing.JTextField weightEmployeeAddText;
+    private javax.swing.JLabel weigthEmployeeAdd;
+    private javax.swing.JLabel weigthEmployeeSubmit;
+    private javax.swing.JTextField weigthEmployeeSubmitText;
+    private javax.swing.JLabel welcomeTekst;
     private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
 
