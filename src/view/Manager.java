@@ -107,15 +107,15 @@ public class Manager extends javax.swing.JFrame {
         ManagerHome = new javax.swing.JPanel();
         welcomeText1 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
-        IDText1 = new javax.swing.JLabel();
+        usernameHome = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
         jLabel59 = new javax.swing.JLabel();
-        jLabel60 = new javax.swing.JLabel();
-        jLabel61 = new javax.swing.JLabel();
-        jLabel62 = new javax.swing.JLabel();
+        dateHome = new javax.swing.JLabel();
+        nameHome = new javax.swing.JLabel();
+        addressHome = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jToggleButton1 = new javax.swing.JToggleButton();
         jLabel63 = new javax.swing.JLabel();
@@ -249,8 +249,8 @@ public class Manager extends javax.swing.JFrame {
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/5Pli3Pfm3V.jpg"))); // NOI18N
         ManagerHome.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 500, 80));
 
-        IDText1.setText("Username:");
-        ManagerHome.add(IDText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 90, 20));
+        usernameHome.setText("Username:");
+        ManagerHome.add(usernameHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 90, 20));
 
         jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vliegtuig_CorendonNL-2-stijgend.png"))); // NOI18N
         ManagerHome.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 160, 50));
@@ -267,14 +267,14 @@ public class Manager extends javax.swing.JFrame {
         jLabel59.setText("City     :");
         ManagerHome.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 50, 20));
 
-        jLabel60.setText("Date :");
-        ManagerHome.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, 60, 20));
+        dateHome.setText("Date :");
+        ManagerHome.add(dateHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, 60, 20));
 
-        jLabel61.setText("Name   :");
-        ManagerHome.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, -1, 20));
+        nameHome.setText("Name   :");
+        ManagerHome.add(nameHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, -1, 20));
 
-        jLabel62.setText("Address   :");
-        ManagerHome.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, 60, 20));
+        addressHome.setText("Address   :");
+        ManagerHome.add(addressHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, 60, 20));
 
         jLabel26.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel26.setText("Profile :");
@@ -1221,7 +1221,6 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JPanel Help;
     private javax.swing.JPanel Home;
     private javax.swing.JLabel ID;
-    private javax.swing.JLabel IDText1;
     private javax.swing.JPanel LogFiles;
     private javax.swing.JLabel LogfilesButton;
     private javax.swing.JLabel LoggedIN;
@@ -1235,6 +1234,8 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JTextField Searchcustomer;
     private javax.swing.JPanel Status;
     private javax.swing.JLabel StatusButton;
+    private javax.swing.JLabel addressHome;
+    private javax.swing.JLabel dateHome;
     private javax.swing.JLabel helpButton1;
     private javax.swing.JLabel helpTitle6;
     private javax.swing.JLabel homeButton;
@@ -1273,9 +1274,6 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel60;
-    private javax.swing.JLabel jLabel61;
-    private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
@@ -1300,7 +1298,9 @@ public class Manager extends javax.swing.JFrame {
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JLabel logoutKnop;
     private javax.swing.JPanel menu;
+    private javax.swing.JLabel nameHome;
     private javax.swing.JLabel searchButton;
+    private javax.swing.JLabel usernameHome;
     private javax.swing.JLabel welcomeText1;
     private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables

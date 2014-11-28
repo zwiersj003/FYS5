@@ -280,7 +280,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="IDText1">
+                <Component class="javax.swing.JLabel" name="usernameHome">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Username:"/>
                   </Properties>
@@ -342,7 +342,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel60">
+                <Component class="javax.swing.JLabel" name="dateHome">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Date :"/>
                   </Properties>
@@ -352,7 +352,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel61">
+                <Component class="javax.swing.JLabel" name="nameHome">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Name   :"/>
                   </Properties>
@@ -362,7 +362,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel62">
+                <Component class="javax.swing.JLabel" name="addressHome">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Address   :"/>
                   </Properties>
