@@ -442,7 +442,7 @@ private PopupMenu Tabel;
 
         bagIdEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         bagIdEmployeeAdd.setText("   BaggageId :");
-        EmpolyeeAddBaggage.add(bagIdEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 175, 80, 10));
+        EmpolyeeAddBaggage.add(bagIdEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 80, 20));
 
         bagIdEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         bagIdEmployeeAddText.setText("Example: 3283852");
@@ -455,7 +455,7 @@ private PopupMenu Tabel;
 
         DepartmentEmployeeAdd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         DepartmentEmployeeAdd.setText("Department :");
-        EmpolyeeAddBaggage.add(DepartmentEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 205, 80, 10));
+        EmpolyeeAddBaggage.add(DepartmentEmployeeAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 80, 20));
 
         departmentEmployeeAddText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         departmentEmployeeAddText.setText("Example: Home");

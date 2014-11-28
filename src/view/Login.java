@@ -121,8 +121,13 @@ public class Login extends javax.swing.JFrame {
 
         password.setBackground(new java.awt.Color(111, 13, 17));
         password.setForeground(new java.awt.Color(250, 250, 250));
-        password.setText("jPasswordField1");
+        password.setText("password\n");
         password.setBorder(null);
+        password.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passwordKeyTyped(evt);
+            }
+        });
         jPanel1.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 200, 250, 20));
 
         Achtergrond.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LoginScherm2.png"))); // NOI18N
@@ -200,6 +205,10 @@ public class Login extends javax.swing.JFrame {
     private void loginKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loginKeyPressed
       
     }//GEN-LAST:event_loginKeyPressed
+
+    private void passwordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordKeyTyped
+        
+    }//GEN-LAST:event_passwordKeyTyped
 
     /**
      * @param args the command line arguments

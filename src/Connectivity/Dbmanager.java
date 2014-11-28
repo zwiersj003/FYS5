@@ -16,7 +16,7 @@ public class Dbmanager {
         try {
             Class.forName("com.mysql.jdbc.Driver");
 
-            String url = "jdbc:mysql://localhost:3306/fys";
+            String url = "jdbc:mysql://localhost:3306/fys?zeroDateTimeBehavior=convertToNull";
             String user = "root", pass = "";
             System.out.println("Connected");
 
