@@ -46,8 +46,8 @@ public class QueryManager {
     }
 
     public void insertBaggage(Baggage baggage) {
-        String sql = "INSERT INTO baggage(baggageId, collor,  weight, brand,  description,  materials, department, status, flightnr)"
-                + "VALUES('" + baggage.baggageId + "','" + baggage.collor + "','" + baggage.weight + "','" + baggage.brand + "','" + baggage.description + "','" + baggage.materials + "','" + baggage.department + "','" + baggage.status + "','" + baggage.flightnr + "')";
+        String sql = "INSERT INTO baggage(baggageId, collor,  weight, brand,  description,  materials, department, status)"
+                + "VALUES('" + baggage.baggageId + "','" + baggage.collor + "','" + baggage.weight + "','" + baggage.brand + "','" + baggage.description + "','" + baggage.materials + "','" + baggage.department + "','" + baggage.status + "')";
         System.out.println(sql);
         int luggage_id = 0;
         try {
@@ -143,7 +143,7 @@ public class QueryManager {
             ResultSet result = dbmanager.doQuery(sql);
 
             while (result.next()) {
-                ld.add(lg = new Baggage(result.getString("baggageId"), result.getString("collor"), result.getString("weight"), result.getString("brand"), result.getString("description"), result.getString("materials"), result.getString("department"), result.getString("status"), result.getString("flightnr")));
+                ld.add(lg = new Baggage(result.getString("baggageId"), result.getString("collor"), result.getString("weight"), result.getString("brand"), result.getString("description"), result.getString("materials"), result.getString("department"), result.getString("status")));
             }
         } catch (SQLException e) {
             //JOptionPane.showMessageDialog(null, e);

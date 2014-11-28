@@ -247,40 +247,32 @@ public class Manager extends javax.swing.JFrame {
         welcomeText1.setToolTipText("");
         ManagerHome.add(welcomeText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 150, 50));
 
-        usernameHome.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        usernameHome.setText("Username :");
-        ManagerHome.add(usernameHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 240, 70, 20));
+        usernameHome.setText("Username:");
+        ManagerHome.add(usernameHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 90, 20));
 
         jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vliegtuig_CorendonNL-2-stijgend.png"))); // NOI18N
         ManagerHome.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 160, 50));
 
-        emailHome.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        emailHome.setText("Email :");
-        ManagerHome.add(emailHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 320, 70, 20));
+        emailHome.setText("Email     :");
+        ManagerHome.add(emailHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 290, -1, -1));
 
-        countryHome.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        countryHome.setText("Country :");
-        ManagerHome.add(countryHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 280, 70, 20));
+        countryHome.setText("Country    :");
+        ManagerHome.add(countryHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 260, 70, 20));
 
-        postalCodeHome.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        postalCodeHome.setText("Postal code :");
-        ManagerHome.add(postalCodeHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 240, 70, 20));
+        postalCodeHome.setText("Zip/Postal code   :");
+        ManagerHome.add(postalCodeHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 230, 90, 20));
 
-        cityHome.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        cityHome.setText("City :");
-        ManagerHome.add(cityHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 200, 70, 20));
+        cityHome.setText("City     :");
+        ManagerHome.add(cityHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 50, 20));
 
-        dateHome.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         dateHome.setText("Date :");
-        ManagerHome.add(dateHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 320, 70, 20));
+        ManagerHome.add(dateHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, 60, 20));
 
-        nameHome.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        nameHome.setText("Name :");
-        ManagerHome.add(nameHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 200, 70, 20));
+        nameHome.setText("Name   :");
+        ManagerHome.add(nameHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, -1, 20));
 
-        addressHome.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        addressHome.setText("Address :");
-        ManagerHome.add(addressHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 280, 70, 20));
+        addressHome.setText("Address   :");
+        ManagerHome.add(addressHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, 60, 20));
 
         jLabel26.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel26.setText("Profile :");
@@ -292,7 +284,7 @@ public class Manager extends javax.swing.JFrame {
                 editHomeActionPerformed(evt);
             }
         });
-        ManagerHome.add(editHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 370, -1, -1));
+        ManagerHome.add(editHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 340, -1, -1));
 
         tUsernameHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         tUsernameHome.setText("jLabel54");
@@ -300,11 +292,11 @@ public class Manager extends javax.swing.JFrame {
 
         lAddressHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         lAddressHome.setText("jLabel46");
-        ManagerHome.add(lAddressHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, 90, 20));
+        ManagerHome.add(lAddressHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 90, 20));
 
         lDateHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         lDateHome.setText("jLabel46");
-        ManagerHome.add(lDateHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, 90, 20));
+        ManagerHome.add(lDateHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 90, 20));
 
         lCityHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         lCityHome.setText("jLabel46");
@@ -312,19 +304,19 @@ public class Manager extends javax.swing.JFrame {
 
         lPostalCodeHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         lPostalCodeHome.setText("jLabel46");
-        ManagerHome.add(lPostalCodeHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 240, 90, 20));
+        ManagerHome.add(lPostalCodeHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, 90, 20));
 
         lCountryHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         lCountryHome.setText("jLabel46");
-        ManagerHome.add(lCountryHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 280, 90, 20));
+        ManagerHome.add(lCountryHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 260, 90, 20));
 
         lEmailHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         lEmailHome.setText("jLabel46");
-        ManagerHome.add(lEmailHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 320, 90, 20));
+        ManagerHome.add(lEmailHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 290, 90, 20));
 
         lNameHome.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         lNameHome.setText("jLabel46");
-        ManagerHome.add(lNameHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 90, 20));
+        ManagerHome.add(lNameHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 90, 20));
 
         Backgroundlabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
         Backgroundlabel1.setToolTipText("");
