@@ -33,7 +33,7 @@ import org.netbeans.lib.awtextra.AbsoluteLayout;
  */
 /**
  *
- * @author EdoTyran
+ * @author EdoTjioe
  */
 public class Employee extends javax.swing.JFrame {
      ArrayList<Customerinfo> lldd = new ArrayList();
