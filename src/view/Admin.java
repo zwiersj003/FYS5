@@ -18,7 +18,7 @@ import model.Customerinfo;
  */
 /**
  *
- * @author EdoTyran
+ * @author JasperKapper >= Kavehskapper
  */
 public class Admin extends javax.swing.JFrame {
 
