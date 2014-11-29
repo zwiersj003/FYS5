@@ -22,6 +22,13 @@ public class QueryManager {
     public CreateAccount Login(String _username, String _password) {
         String Accounttype = "";
         String password = "";
+        String name = "";
+        String adress = "";
+        String city = "";
+        String postal = "";
+        String country = "";
+        String email = "";
+        
         CreateAccount createaccount = new CreateAccount("",false, "", "", "", "", "", "", "", "", "");
 
         try {
@@ -31,6 +38,12 @@ public class QueryManager {
             while (result.next()) {
                 password = result.getString("passwordd");
                 Accounttype = result.getString("accounttype");
+//                name = result.getString("name");
+//                adress = result.getString("adress");
+//                city = result.getString("city");
+//                postal = result.getString("postal");
+//                country = result.getString("country");
+//                email = result.getString("email");
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e);
@@ -39,7 +52,6 @@ public class QueryManager {
                 createaccount.succes = true;
                 createaccount.accounttype = Accounttype;
                 createaccount.username = _username;
-
             }
         }
         return createaccount;

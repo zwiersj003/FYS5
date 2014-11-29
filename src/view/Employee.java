@@ -11,6 +11,7 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.PopupMenu;
 import java.awt.Toolkit;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -52,7 +53,7 @@ public static void infoBox(String infoMessage, String titleBar)
 //            dbm.openConnection();
 //          CreateAccount cm;  
 //        cm = qm.getCustomer(id);    
-//       firstname.setText(cm.name);
+//        firstname.setText(cm.name);
 //        customerInfo.firstName = txtFirstName.getText();
 //        customerInfo.lastName = txtLastName.getText();
 //        customerInfo.sex = 1;
@@ -74,6 +75,13 @@ public static void infoBox(String infoMessage, String titleBar)
                               
   public void SetUser(CreateAccount createaccount) {
       
+      Dbmanager dbm = new Dbmanager();
+        QueryManager qm = new QueryManager(dbm);
+        //Open database connection
+
+        dbm.openConnection();
+      
+//        lld = qm.GetAccountInfo("SELECT * from createaccount");
       
         loginAsEmployee.setText("Logged in as: " +createaccount.accounttype);
         idAsEmployee.setText("Employee id: " +createaccount.username);
@@ -968,6 +976,7 @@ private PopupMenu Tabel;
         homeButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         homeButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         homeButton.setText("Home");
+        homeButton.setToolTipText("");
         homeButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         homeButton.setOpaque(true);
         homeButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -986,6 +995,7 @@ private PopupMenu Tabel;
         searchButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         searchButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         searchButton.setText("Search");
+        searchButton.setToolTipText("");
         searchButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         searchButton.setOpaque(true);
         searchButton.addMouseListener(new java.awt.event.MouseAdapter() {
