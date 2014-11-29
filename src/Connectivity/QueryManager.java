@@ -55,9 +55,7 @@ public class QueryManager {
             result.next();
             luggage_id = result.getInt(1);
             System.out.println(luggage_id);
-
         } catch (SQLException e) {
-
             System.out.println("FOUT" + e.getMessage());
         }
 
@@ -143,7 +141,7 @@ public class QueryManager {
             ResultSet result = dbmanager.doQuery(sql);
 
             while (result.next()) {
-                ld.add(lg = new Baggage(result.getString("baggageId"), result.getString("collor"), result.getString("weight"), result.getString("brand"), result.getString("description"), result.getString("materials"), result.getString("department"), result.getString("status"), result.getString("flightnr")));
+                ld.add(lg = new Baggage(result.getString("baggageId"), result.getString("department"), result.getString("collor"), result.getString("weight"), result.getString("brand"), result.getString("materials"), result.getString("description"), result.getString("status"), result.getString("flightnr")));
             }
         } catch (SQLException e) {
             //JOptionPane.showMessageDialog(null, e);

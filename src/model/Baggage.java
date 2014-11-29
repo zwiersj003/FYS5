@@ -16,7 +16,7 @@ public class Baggage {
         this("", "", "", "", "", "", "", "", "");
     }
 
-    public Baggage(String baggageId, String collor, String weight, String brand, String description, String materials, String department, String status, String flightnr) {
+    public Baggage(String baggageId, String department, String collor, String weight, String brand, String materials, String description, String status, String flightnr) {
         this.baggageId = baggageId;
         this.collor = collor;
         this.weight = weight;
