@@ -167,11 +167,11 @@ private PopupMenu Tabel;
         MaterialsEmployeeSearch = new javax.swing.JTextField();
         flightEmployeeSearchBut = new javax.swing.JLabel();
         flightEmployeeSearch = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
+        corLogoEmployeeSearch = new javax.swing.JLabel();
         viewAll = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        bgEmployeeSearch = new javax.swing.JLabel();
+        jScrollBar1 = new javax.swing.JScrollBar();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jButton5 = new javax.swing.JButton();
         submitRequest = new javax.swing.JPanel();
         EmpolyeeAddBaggage = new javax.swing.JPanel();
         titelEmployeeAdd = new javax.swing.JLabel();
@@ -217,7 +217,7 @@ private PopupMenu Tabel;
         jLabel34 = new javax.swing.JLabel();
         jFileChooser1 = new javax.swing.JFileChooser();
         jLabel5 = new javax.swing.JLabel();
-        SubmitBaggage = new javax.swing.JPanel();
+        foundBaggage = new javax.swing.JPanel();
         EmployeeSumbitBaggage = new javax.swing.JPanel();
         titleEmployeeSubmit = new javax.swing.JLabel();
         bagInfoEmployeeSubmit = new javax.swing.JLabel();
@@ -395,11 +395,11 @@ private PopupMenu Tabel;
                 costEmployeeSearchButMouseExited(evt);
             }
         });
-        EmployeeSearch.add(costEmployeeSearchBut, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 132, 60, 20));
+        EmployeeSearch.add(costEmployeeSearchBut, new org.netbeans.lib.awtextra.AbsoluteConstraints(608, 132, 60, 20));
 
         costEmployeeSearch.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         costEmployeeSearch.setText("Search customer");
-        EmployeeSearch.add(costEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, 170, 24));
+        EmployeeSearch.add(costEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, 230, 24));
 
         bagIdEmployeeSearchBut.setBackground(new java.awt.Color(151, 53, 53));
         bagIdEmployeeSearchBut.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -421,7 +421,7 @@ private PopupMenu Tabel;
 
         bagIdEmployeeSearch.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         bagIdEmployeeSearch.setText("Search BaggageID");
-        EmployeeSearch.add(bagIdEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 130, 170, 24));
+        EmployeeSearch.add(bagIdEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 130, 230, 24));
 
         departEmployeeSearchBut.setBackground(new java.awt.Color(151, 53, 53));
         departEmployeeSearchBut.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -443,7 +443,7 @@ private PopupMenu Tabel;
 
         departEmployeeSearch.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         departEmployeeSearch.setText("Search Department");
-        EmployeeSearch.add(departEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 170, 170, 24));
+        EmployeeSearch.add(departEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 170, 230, 24));
 
         colorEmployeeSearchBut.setBackground(new java.awt.Color(151, 53, 53));
         colorEmployeeSearchBut.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -451,6 +451,9 @@ private PopupMenu Tabel;
         colorEmployeeSearchBut.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         colorEmployeeSearchBut.setOpaque(true);
         colorEmployeeSearchBut.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                colorEmployeeSearchButMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 colorEmployeeSearchButMouseEntered(evt);
             }
@@ -462,7 +465,7 @@ private PopupMenu Tabel;
 
         colorEmployeeSearch.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         colorEmployeeSearch.setText("Search Color");
-        EmployeeSearch.add(colorEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 210, 170, 24));
+        EmployeeSearch.add(colorEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 210, 230, 24));
 
         weightEmployeeSearchBut.setBackground(new java.awt.Color(151, 53, 53));
         weightEmployeeSearchBut.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -470,6 +473,9 @@ private PopupMenu Tabel;
         weightEmployeeSearchBut.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         weightEmployeeSearchBut.setOpaque(true);
         weightEmployeeSearchBut.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                weightEmployeeSearchButMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 weightEmployeeSearchButMouseEntered(evt);
             }
@@ -481,7 +487,7 @@ private PopupMenu Tabel;
 
         weightEmployeeSearch.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         weightEmployeeSearch.setText("Search Weight");
-        EmployeeSearch.add(weightEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 250, 170, 24));
+        EmployeeSearch.add(weightEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 250, 230, 24));
 
         materialsEmployeeSearchBut.setBackground(new java.awt.Color(151, 53, 53));
         materialsEmployeeSearchBut.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -500,7 +506,7 @@ private PopupMenu Tabel;
 
         MaterialsEmployeeSearch.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         MaterialsEmployeeSearch.setText("Search Materials");
-        EmployeeSearch.add(MaterialsEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 290, 170, 24));
+        EmployeeSearch.add(MaterialsEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 290, 230, 24));
 
         flightEmployeeSearchBut.setBackground(new java.awt.Color(151, 53, 53));
         flightEmployeeSearchBut.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -519,11 +525,11 @@ private PopupMenu Tabel;
 
         flightEmployeeSearch.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         flightEmployeeSearch.setText("Search Flightnr");
-        EmployeeSearch.add(flightEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 330, 170, 24));
+        EmployeeSearch.add(flightEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 330, 230, 24));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
-        jLabel11.setText("jLabel11");
-        EmployeeSearch.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, 70));
+        corLogoEmployeeSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
+        corLogoEmployeeSearch.setText("jLabel11");
+        EmployeeSearch.add(corLogoEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, 70));
 
         viewAll.setText("View all");
         viewAll.addActionListener(new java.awt.event.ActionListener() {
@@ -533,19 +539,12 @@ private PopupMenu Tabel;
         });
         EmployeeSearch.add(viewAll, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 380, 120, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
-        jLabel3.setToolTipText("");
-        jLabel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        EmployeeSearch.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 440));
-        EmployeeSearch.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 250, 90, 90));
-
-        jButton5.setText("View all bagaggel");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        EmployeeSearch.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 330, 120, -1));
+        bgEmployeeSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
+        bgEmployeeSearch.setToolTipText("");
+        bgEmployeeSearch.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        EmployeeSearch.add(bgEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 440));
+        EmployeeSearch.add(jScrollBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 260, 70, -1));
+        EmployeeSearch.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 290, -1, -1));
 
         Search.add(EmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 980, 500));
 
@@ -800,9 +799,9 @@ private PopupMenu Tabel;
 
         jPanel1.add(Help, "card5");
 
-        SubmitBaggage.setBackground(new java.awt.Color(255, 255, 255));
-        SubmitBaggage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 9));
-        SubmitBaggage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        foundBaggage.setBackground(new java.awt.Color(255, 255, 255));
+        foundBaggage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 9));
+        foundBaggage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         EmployeeSumbitBaggage.setBackground(new java.awt.Color(153, 51, 51));
         EmployeeSumbitBaggage.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.gray, null, java.awt.Color.lightGray));
@@ -921,9 +920,9 @@ private PopupMenu Tabel;
         backgroundEmployeeSubmit.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         EmployeeSumbitBaggage.add(backgroundEmployeeSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 440));
 
-        SubmitBaggage.add(EmployeeSumbitBaggage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 980, 490));
+        foundBaggage.add(EmployeeSumbitBaggage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 980, 490));
 
-        jPanel1.add(SubmitBaggage, "card6");
+        jPanel1.add(foundBaggage, "card6");
 
         Manage.setBackground(new java.awt.Color(255, 255, 255));
         Manage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 9));
@@ -1089,15 +1088,15 @@ private PopupMenu Tabel;
                 .addComponent(homeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(submitBaggageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
                 .addComponent(addBaggageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ManageBaggagee, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(submitBaggageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(helpButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 74, Short.MAX_VALUE))
+                .addGap(79, 79, 79))
         );
 
         getContentPane().add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 180, 178, 410));
@@ -1199,7 +1198,7 @@ private PopupMenu Tabel;
     private void submitBaggageButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submitBaggageButtonMouseClicked
         jPanel1.removeAll();
         jPanel1.revalidate();
-        jPanel1.add(SubmitBaggage);
+        jPanel1.add(foundBaggage);
         jPanel1.repaint();
         jPanel1.revalidate();
     }//GEN-LAST:event_submitBaggageButtonMouseClicked
@@ -1397,10 +1396,6 @@ private PopupMenu Tabel;
         jPanel1.revalidate();
     }//GEN-LAST:event_viewAllActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
-
     private void departmentEmployeeAddTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_departmentEmployeeAddTextActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_departmentEmployeeAddTextActionPerformed
@@ -1525,7 +1520,7 @@ private PopupMenu Tabel;
         contentPane.setLayout(new BorderLayout());
         contentPane.setSize(900, 500);
         contentPane.setBounds(200, 20, 900, 500);
-        table.setSize(300, 100);
+        table.setSize(100, 100);
         JScrollPane jScrollPane1 = new JScrollPane(table);
         jScrollPane1.setSize(900, 500); 
         Button a = new Button("HI");
@@ -1585,6 +1580,8 @@ private PopupMenu Tabel;
                 ld.department, ld.baggageId, ld.collor, ld.weight, ld.brand, ld.materials, ld.description, ld.status, ld.flightnr
             });
         }
+        table.removeAll();
+        table.revalidate();
         Container contentPane = this.getContentPane();
         contentPane.setLayout(new BorderLayout());
         contentPane.setSize(900, 500);
@@ -1664,6 +1661,130 @@ private PopupMenu Tabel;
         jPanel1.revalidate();
     }//GEN-LAST:event_costEmployeeSearchButMouseClicked
 
+    private void colorEmployeeSearchButMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_colorEmployeeSearchButMouseClicked
+        Dbmanager dbm = new Dbmanager();
+        QueryManager qm = new QueryManager(dbm);
+        //Open database connection
+
+        dbm.openConnection();
+
+        if (colorEmployeeSearch.getText().equals(""))
+        {
+            lld = qm.getBaggage("SELECT * from baggage");
+        } else
+        {
+            lld = qm.getBaggage("SELECT * FROM baggage WHERE collor = '" + colorEmployeeSearch.getText() + "'");
+        }
+
+        DefaultTableModel model = new DefaultTableModel();
+        table = new JTable(model);
+
+        // Create a couple of columns 
+        model.addColumn("Color");
+        model.addColumn("Department");
+        model.addColumn("Baggageid");
+        model.addColumn("Weight");
+        model.addColumn("Brand");
+        model.addColumn("Material");
+        model.addColumn("Description");
+        model.addColumn("Status");
+        model.addColumn("Flightnr");
+        
+        // Append a row 
+        for (Baggage ld : lld)
+        {
+            model.addRow(new Object[]
+            {
+                ld.collor, ld.baggageId, ld.department, ld.weight, ld.brand, ld.materials, ld.description, ld.status, ld.flightnr
+            });
+        }
+        Container contentPane = this.getContentPane();
+        contentPane.setLayout(new BorderLayout());
+        contentPane.setSize(900, 500);
+        contentPane.setBounds(200, 20, 900, 500);
+        table.setSize(300, 100);
+        JScrollPane jScrollPane1 = new JScrollPane(table);
+        jScrollPane1.setSize(900, 500); 
+        Button a = new Button("HI");
+        jPanel1.removeAll();
+        jPanel1.revalidate();   
+        jPanel1.add(jScrollPane1);
+        jPanel1.repaint();
+        jPanel1.revalidate();
+
+      
+        jScrollPane1 = new JScrollPane(table);
+        frame.add(jScrollPane1, BorderLayout.CENTER);
+        frame.setSize(700, 500);
+        frame.setVisible(true);
+        frame.setLocationRelativeTo(null);
+        jPanel1.removeAll();
+        jPanel1.revalidate();   
+        jPanel1.add(EmployeeSearch);
+        jPanel1.repaint();
+        jPanel1.revalidate();
+    }//GEN-LAST:event_colorEmployeeSearchButMouseClicked
+
+    private void weightEmployeeSearchButMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weightEmployeeSearchButMouseClicked
+        Dbmanager dbm = new Dbmanager();
+        QueryManager qm = new QueryManager(dbm);
+        //Open database connection
+
+        dbm.openConnection();
+
+        if (weightEmployeeSearch.getText().equals(""))
+        {
+            lld = qm.getBaggage("SELECT * from baggage");
+        } else
+        {
+            lld = qm.getBaggage("SELECT * FROM baggage WHERE weight = '" + weightEmployeeSearch.getText() + "'");
+        }
+
+        DefaultTableModel model = new DefaultTableModel();
+        table = new JTable(model);
+
+        // Create a couple of columns 
+        model.addColumn("Weight");
+        model.addColumn("Department");
+        model.addColumn("Baggageid");
+        model.addColumn("Color");
+        model.addColumn("Brand");
+        model.addColumn("Material");
+        model.addColumn("Description");
+        model.addColumn("Status");
+        model.addColumn("Flightnr");
+        
+        // Append a row 
+        for (Baggage ld : lld)
+        {
+            model.addRow(new Object[]
+            {
+                ld.collor, ld.baggageId, ld.department, ld.weight, ld.brand, ld.materials, ld.description, ld.status, ld.flightnr
+            });
+        }
+        Container contentPane = this.getContentPane();
+        contentPane.setLayout(new BorderLayout());
+        contentPane.setSize(900, 500);
+        contentPane.setBounds(200, 20, 900, 500);
+        table.setSize(300, 100);
+        JScrollPane jScrollPane1 = new JScrollPane(table);
+        jScrollPane1.setSize(900, 500); 
+        Button a = new Button("HI");
+      
+        jScrollPane1 = new JScrollPane(table);
+        frame.removeAll();
+        frame.revalidate();
+        frame.add(jScrollPane1, BorderLayout.CENTER);
+        frame.setSize(700, 500);
+        frame.setVisible(true);
+        frame.setLocationRelativeTo(null);
+        jPanel1.removeAll();
+        jPanel1.revalidate();   
+        jPanel1.add(EmployeeSearch);
+        jPanel1.repaint();
+        jPanel1.revalidate();
+    }//GEN-LAST:event_weightEmployeeSearchButMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1716,7 +1837,6 @@ private PopupMenu Tabel;
     private javax.swing.JTextField MaterialsEmployeeSearch;
     private javax.swing.JPanel Search;
     private javax.swing.JTextField SearchBaggage1;
-    private javax.swing.JPanel SubmitBaggage;
     private javax.swing.JLabel addBaggageButton;
     private javax.swing.JLabel addressEmployee;
     private javax.swing.JLabel addressEmployeeAdd;
@@ -1732,6 +1852,7 @@ private PopupMenu Tabel;
     private javax.swing.JTextField bagIdEmployeeSubmitText;
     private javax.swing.JLabel bagInfoEmployeeAdd;
     private javax.swing.JLabel bagInfoEmployeeSubmit;
+    private javax.swing.JLabel bgEmployeeSearch;
     private javax.swing.JLabel brandEmployeeAdd;
     private javax.swing.JTextField brandEmployeeAddText;
     private javax.swing.JLabel brandEmployeeSubmit;
@@ -1746,6 +1867,7 @@ private PopupMenu Tabel;
     private javax.swing.JLabel colorEmployeeSearchBut;
     private javax.swing.JLabel colorEmployeeSubmit;
     private javax.swing.JTextField colorEmployeeSubmitText;
+    private javax.swing.JLabel corLogoEmployeeSearch;
     private javax.swing.JTextField costEmployeeSearch;
     private javax.swing.JLabel costEmployeeSearchBut;
     private javax.swing.JLabel countryEmployee;
@@ -1776,14 +1898,12 @@ private PopupMenu Tabel;
     private javax.swing.JLabel flightEmployeeSearchBut;
     private javax.swing.JTextField flightEmployeeSubmitText;
     private javax.swing.JLabel fligthEmployeeSubmit;
+    private javax.swing.JPanel foundBaggage;
     private javax.swing.JLabel helpButton;
     private javax.swing.JLabel homeButton;
     private javax.swing.JLabel idAsEmployee;
-    private javax.swing.JButton jButton5;
     private javax.swing.JFileChooser jFileChooser1;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel42;
@@ -1791,6 +1911,7 @@ private PopupMenu Tabel;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel loginAsEmployee;
     private javax.swing.JLabel logoutKnop;
