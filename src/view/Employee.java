@@ -75,15 +75,15 @@ public static void infoBox(String infoMessage, String titleBar)
   public void SetUser(CreateAccount createaccount) {
         loginAsEmployee.setText("Logged in as: " +createaccount.accounttype);
         idAsEmployee.setText("Employee id: " +createaccount.username);
-        nameEmployeeText.setText(createaccount.username);
+        nameEmployeeText.setText(createaccount.name);
         welcomeTekst.setText("Welcome " + createaccount.username+ "," );
-        usernameEmployeeText.setText("Not Set");
-        addressEmployeeText.setText("Not Set");
-        dateEmployeeText.setText("Not Set");
-        cityEmployeeText.setText("Not Set");
-        postalEmployeeText.setText("Not Set");
-        countryEmployeeText.setText("Not Set");
-        emailEmployeeText.setText("Not Set");
+        usernameEmployeeText.setText(createaccount.username);
+        addressEmployeeText.setText(createaccount.adress);
+        dateEmployeeText.setText("Not set");
+        cityEmployeeText.setText(createaccount.city);
+        postalEmployeeText.setText(createaccount.postal);
+        countryEmployeeText.setText(createaccount.country);
+        emailEmployeeText.setText(createaccount.email);
         
 
         if ("employee".equals(createaccount.accounttype)) {
@@ -167,10 +167,7 @@ private PopupMenu Tabel;
         MaterialsEmployeeSearch = new javax.swing.JTextField();
         flightEmployeeSearchBut = new javax.swing.JLabel();
         flightEmployeeSearch = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel50 = new javax.swing.JLabel();
         viewAll = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -302,7 +299,7 @@ private PopupMenu Tabel;
 
         usernameEmployee.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         usernameEmployee.setText("Username :");
-        EmployeeHome.add(usernameEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 250, 60, 20));
+        EmployeeHome.add(usernameEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 80, 20));
 
         usernameEmployeeText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         usernameEmployeeText.setText("jLabel46");
@@ -388,6 +385,9 @@ private PopupMenu Tabel;
         costEmployeeSearchBut.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         costEmployeeSearchBut.setOpaque(true);
         costEmployeeSearchBut.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                costEmployeeSearchButMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 costEmployeeSearchButMouseEntered(evt);
             }
@@ -521,28 +521,9 @@ private PopupMenu Tabel;
         flightEmployeeSearch.setText("Search Flightnr");
         EmployeeSearch.add(flightEmployeeSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 330, 170, 24));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/seoLogo.png"))); // NOI18N
-        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel9MouseClicked(evt);
-            }
-        });
-        EmployeeSearch.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 196, 30, 40));
-
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
         jLabel11.setText("jLabel11");
         EmployeeSearch.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, 70));
-
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vliegtuig_CorendonNL-2-stijgend.png"))); // NOI18N
-        EmployeeSearch.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 160, 50));
-
-        jLabel50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/seoLogo.png"))); // NOI18N
-        jLabel50.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel50MouseClicked(evt);
-            }
-        });
-        EmployeeSearch.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 120, -1, -1));
 
         viewAll.setText("View all");
         viewAll.addActionListener(new java.awt.event.ActionListener() {
@@ -1152,7 +1133,7 @@ private PopupMenu Tabel;
     }// </editor-fold>//GEN-END:initComponents
 
     private void homeButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_homeButtonMouseEntered
-        homeButton.setBackground(Color.lightGray);
+        homeButton.setBackground(new java.awt.Color(153,51,51));
     }//GEN-LAST:event_homeButtonMouseEntered
 
     private void homeButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_homeButtonMouseExited
@@ -1160,19 +1141,19 @@ private PopupMenu Tabel;
     }//GEN-LAST:event_homeButtonMouseExited
 
     private void searchButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchButtonMouseEntered
-        searchButton.setBackground(Color.lightGray);
+        searchButton.setBackground(new java.awt.Color(153,51,51));
     }//GEN-LAST:event_searchButtonMouseEntered
 
     private void addBaggageButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addBaggageButtonMouseEntered
-        addBaggageButton.setBackground(Color.lightGray);
+        addBaggageButton.setBackground(new java.awt.Color(153,51,51));
     }//GEN-LAST:event_addBaggageButtonMouseEntered
 
     private void submitBaggageButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submitBaggageButtonMouseEntered
-        submitBaggageButton.setBackground(Color.lightGray);
+        submitBaggageButton.setBackground(new java.awt.Color(153,51,51));
     }//GEN-LAST:event_submitBaggageButtonMouseEntered
 
     private void helpButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_helpButtonMouseEntered
-        helpButton.setBackground(Color.lightGray);
+        helpButton.setBackground(new java.awt.Color(153,51,51));
     }//GEN-LAST:event_helpButtonMouseEntered
 
     private void searchButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchButtonMouseExited
@@ -1333,71 +1314,6 @@ private PopupMenu Tabel;
     }//GEN-LAST:event_nameEmployeeAddTextActionPerformed
            
 
-    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
-         Dbmanager dbm = new Dbmanager();
-        QueryManager qm = new QueryManager(dbm);
-        //Open database connection
-
-        dbm.openConnection();
-
-        if (bagIdEmployeeSearch.getText().equals(""))
-        {
-            lld = qm.getBaggage("SELECT * from baggage");
-        } else
-        {
-            lld = qm.getBaggage("SELECT * FROM baggage WHERE baggageId = " + bagIdEmployeeSearch.getText());
-        }
-
-        DefaultTableModel model = new DefaultTableModel();
-        table = new JTable(model);
-
-        // Create a couple of columns 
-        model.addColumn("Baggageid");
-        model.addColumn("Department");
-        model.addColumn("Color");
-        model.addColumn("Weight");
-        model.addColumn("Brand");
-        model.addColumn("Material");
-        model.addColumn("Description");
-        model.addColumn("Status");
-        model.addColumn("Flightnr");
-        
-        // Append a row 
-        for (Baggage ld : lld)
-        {
-            model.addRow(new Object[]
-            {
-                ld.baggageId, ld.department, ld.collor, ld.weight, ld.brand, ld.materials, ld.description, ld.status, ld.flightnr
-            });
-        }
-        Container contentPane = this.getContentPane();
-        contentPane.setLayout(new BorderLayout());
-        contentPane.setSize(900, 500);
-        contentPane.setBounds(200, 20, 900, 500);
-        table.setSize(300, 100);
-        JScrollPane jScrollPane1 = new JScrollPane(table);
-        jScrollPane1.setSize(900, 500); 
-        Button a = new Button("HI");
-        jPanel1.removeAll();
-        jPanel1.revalidate();   
-        jPanel1.add(jScrollPane1);
-        jPanel1.repaint();
-        jPanel1.revalidate();
-
-      
-        jScrollPane1 = new JScrollPane(table);
-        frame.add(jScrollPane1, BorderLayout.CENTER);
-        frame.setSize(700, 500);
-        frame.setVisible(true);
-        frame.setLocationRelativeTo(null);
-        jPanel1.removeAll();
-        jPanel1.revalidate();   
-        jPanel1.add(EmployeeSearch);
-        jPanel1.repaint();
-        jPanel1.revalidate();
-        
-    }//GEN-LAST:event_jLabel9MouseClicked
-
     private void editEmployeeProfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editEmployeeProfileActionPerformed
      Employee.infoBox("No Permission, \nContact Administrator: \nRichard ", "Error");
     }//GEN-LAST:event_editEmployeeProfileActionPerformed
@@ -1411,7 +1327,7 @@ private PopupMenu Tabel;
     }//GEN-LAST:event_ManageBaggageeMouseClicked
 
     private void ManageBaggageeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBaggageeMouseEntered
-      ManageBaggagee.setBackground(Color.lightGray);
+      ManageBaggagee.setBackground(new java.awt.Color(153,51,51));
     }//GEN-LAST:event_ManageBaggageeMouseEntered
 
     private void ManageBaggageeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBaggageeMouseExited
@@ -1421,59 +1337,6 @@ private PopupMenu Tabel;
     private void jLabel42MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel42MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel42MouseClicked
-
-    private void jLabel50MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel50MouseClicked
-      Dbmanager dbm = new Dbmanager();
-        QueryManager qm = new QueryManager(dbm);
-        //Open database connection
-        dbm.openConnection();
-        Customerinfo cm = new Customerinfo("", "", "", "", "", "", "");
-       
-         //AANROEPEN qm.something
-        frame = new JFrame();
-
-        DefaultTableModel model = new DefaultTableModel();
-        table = new JTable(model);
-
-        // Create a couple of columns 
-        model.addColumn("Customer Name");
-        model.addColumn("Adress");
-        model.addColumn("Shipping Adress");
-        model.addColumn("City");
-        model.addColumn("Postal");
-        model.addColumn("Country");
-        model.addColumn("Email");
-      
-       
-        // Append a row 
-        
-        if ( jLabel5.getText().equals(""))
-        {
-            lldd = qm.getCustomersinfoo("SELECT * from customerinfo");
-        } else
-        {
-            lldd = qm.getCustomersinfoo("SELECT * FROM customerinfo WHERE CustomerName  = '" +   costEmployeeSearch.getText() + "'"
-                    + "OR City ='" +   costEmployeeSearch.getText() + "';" );
-        }
-
-        for (Customerinfo cmm : lldd) {
-            model.addRow(new Object[]{
-               cmm.Name, cmm.Adress, cmm.shippingAdress, cmm.City, cmm.Postal, cmm.Country, cmm.Email });
-          
-        }
-
-        jScrollPane1 = new JScrollPane(table);
-        frame.add(jScrollPane1, BorderLayout.CENTER);
-        frame.setSize(1500, 200);
-        frame.setVisible(true);
-        frame.setLocationRelativeTo(null);
-        jPanel1.removeAll();
-        jPanel1.revalidate();   
-        jPanel1.add(EmployeeSearch);
-        jPanel1.repaint();
-        jPanel1.revalidate();
-       
-    }//GEN-LAST:event_jLabel50MouseClicked
 
     private void viewAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewAllActionPerformed
         Dbmanager dbm = new Dbmanager();
@@ -1618,13 +1481,22 @@ private PopupMenu Tabel;
         //Open database connection
 
         dbm.openConnection();
+        
+//        switch(bagIdEmployeeSearch.getText()){
+//            case "":
+//                lld = qm.getBaggage("SELECT * from baggage");
+//                break;
+//            case !"":
+//                lld = qm.getBaggage("SELECT * FROM baggage WHERE baggageId = '" + bagIdEmployeeSearch.getText() + "'");
+//                break;
+//        }
 
         if (bagIdEmployeeSearch.getText().equals(""))
         {
             lld = qm.getBaggage("SELECT * from baggage");
         } else
         {
-            lld = qm.getBaggage("SELECT * FROM baggage WHERE baggageId = " + bagIdEmployeeSearch.getText());
+            lld = qm.getBaggage("SELECT * FROM baggage WHERE baggageId = '" + bagIdEmployeeSearch.getText() + "'");
         }
 
         DefaultTableModel model = new DefaultTableModel();
@@ -1688,7 +1560,7 @@ private PopupMenu Tabel;
             lld = qm.getBaggage("SELECT * from baggage");
         } else
         {
-            lld = qm.getBaggage("SELECT * FROM baggage WHERE department = " + departEmployeeSearch.getText());
+            lld = qm.getBaggage("SELECT * FROM baggage WHERE department = '" + departEmployeeSearch.getText() + "'");
         }
 
         DefaultTableModel model = new DefaultTableModel();
@@ -1739,6 +1611,58 @@ private PopupMenu Tabel;
         jPanel1.repaint();
         jPanel1.revalidate();
     }//GEN-LAST:event_departEmployeeSearchButMouseClicked
+
+    private void costEmployeeSearchButMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_costEmployeeSearchButMouseClicked
+        Dbmanager dbm = new Dbmanager();
+        QueryManager qm = new QueryManager(dbm);
+        //Open database connection
+        dbm.openConnection();
+        Customerinfo cm = new Customerinfo("", "", "", "", "", "", "");
+       
+         //AANROEPEN qm.something
+        frame = new JFrame();
+
+        DefaultTableModel model = new DefaultTableModel();
+        table = new JTable(model);
+
+        // Create a couple of columns 
+        model.addColumn("Customer Name");
+        model.addColumn("Adress");
+        model.addColumn("Shipping Adress");
+        model.addColumn("City");
+        model.addColumn("Postal");
+        model.addColumn("Country");
+        model.addColumn("Email");
+      
+       
+        // Append a row 
+        
+        if ( jLabel5.getText().equals(""))
+        {
+            lldd = qm.getCustomersinfoo("SELECT * from customerinfo");
+        } else
+        {
+            lldd = qm.getCustomersinfoo("SELECT * FROM customerinfo WHERE CustomerName  = '" +   costEmployeeSearch.getText() + "'"
+                    + "OR City ='" +   costEmployeeSearch.getText() + "';" );
+        }
+
+        for (Customerinfo cmm : lldd) {
+            model.addRow(new Object[]{
+               cmm.Name, cmm.Adress, cmm.shippingAdress, cmm.City, cmm.Postal, cmm.Country, cmm.Email });
+          
+        }
+
+        jScrollPane1 = new JScrollPane(table);
+        frame.add(jScrollPane1, BorderLayout.CENTER);
+        frame.setSize(1500, 200);
+        frame.setVisible(true);
+        frame.setLocationRelativeTo(null);
+        jPanel1.removeAll();
+        jPanel1.revalidate();   
+        jPanel1.add(EmployeeSearch);
+        jPanel1.repaint();
+        jPanel1.revalidate();
+    }//GEN-LAST:event_costEmployeeSearchButMouseClicked
 
     /**
      * @param args the command line arguments
@@ -1859,7 +1783,6 @@ private PopupMenu Tabel;
     private javax.swing.JFileChooser jFileChooser1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel34;
@@ -1867,8 +1790,6 @@ private PopupMenu Tabel;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel loginAsEmployee;
