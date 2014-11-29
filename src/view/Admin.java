@@ -148,34 +148,33 @@ public class Admin extends javax.swing.JFrame {
         backgroundPersonal = new javax.swing.JLabel();
         Create = new javax.swing.JPanel();
         AdminCreate = new javax.swing.JPanel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        homeadress = new javax.swing.JTextField();
-        homecity = new javax.swing.JTextField();
-        homepostal = new javax.swing.JTextField();
-        homeemail = new javax.swing.JTextField();
-        firstname = new javax.swing.JTextField();
-        homecountry = new javax.swing.JTextField();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
-        jLabel40 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel43 = new javax.swing.JLabel();
-        accounttypee = new javax.swing.JTextField();
-        jLabel45 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        corendonCreate = new javax.swing.JLabel();
+        accountinfoCreate = new javax.swing.JLabel();
+        personalinfoCreate = new javax.swing.JLabel();
+        newusernameCreate = new javax.swing.JLabel();
+        newusernameCreateText = new javax.swing.JTextField();
+        newpasswordCreate = new javax.swing.JLabel();
+        newpasswordCreateText = new javax.swing.JPasswordField();
+        repeatpasswordCreate = new javax.swing.JLabel();
+        repeatpasswordCreateText = new javax.swing.JPasswordField();
+        accounttypeCreate = new javax.swing.JLabel();
+        accounttypeCreateText = new javax.swing.JTextField();
+        nameCreate = new javax.swing.JLabel();
+        nameCreateText = new javax.swing.JTextField();
+        addressCreate = new javax.swing.JLabel();
+        addressCreateText = new javax.swing.JTextField();
+        cityCreate = new javax.swing.JLabel();
+        cityCreateText = new javax.swing.JTextField();
+        postalcodeCreate = new javax.swing.JLabel();
+        postalcodeCreateText = new javax.swing.JTextField();
+        countryCreate = new javax.swing.JLabel();
+        countryCreateText = new javax.swing.JTextField();
+        emailCreate = new javax.swing.JLabel();
+        emailCreateText = new javax.swing.JTextField();
+        dateofbirthCreate = new javax.swing.JLabel();
         jSpinner2 = new javax.swing.JSpinner();
         jButton2 = new javax.swing.JButton();
-        password2 = new javax.swing.JPasswordField();
-        password = new javax.swing.JPasswordField();
-        username1 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
+        backgroundCreate = new javax.swing.JLabel();
         Help = new javax.swing.JPanel();
         AdminHelp = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
@@ -185,28 +184,27 @@ public class Admin extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         Delete = new javax.swing.JPanel();
         AdminDelete = new javax.swing.JPanel();
-        jLabel42 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
-        jLabel46 = new javax.swing.JLabel();
-        jLabel47 = new javax.swing.JLabel();
-        jLabel48 = new javax.swing.JLabel();
-        jLabel49 = new javax.swing.JLabel();
-        jLabel50 = new javax.swing.JLabel();
-        jTextField24 = new javax.swing.JTextField();
-        jTextField25 = new javax.swing.JTextField();
-        jTextField29 = new javax.swing.JTextField();
-        jTextField30 = new javax.swing.JTextField();
-        jTextField31 = new javax.swing.JTextField();
-        jTextField32 = new javax.swing.JTextField();
-        jLabel51 = new javax.swing.JLabel();
-        jLabel54 = new javax.swing.JLabel();
-        jLabel55 = new javax.swing.JLabel();
-        jLabel56 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jButton1 = new javax.swing.JButton();
+        corendonDelete = new javax.swing.JLabel();
+        accountinfoDelete = new javax.swing.JLabel();
+        personalinfoDelete = new javax.swing.JLabel();
+        chooseaccountDelete = new javax.swing.JLabel();
         jSpinner1 = new javax.swing.JSpinner();
-        jLabel10 = new javax.swing.JLabel();
+        areusureDelete = new javax.swing.JLabel();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        deleteDeleteButton = new javax.swing.JButton();
+        nameDelete = new javax.swing.JLabel();
+        nameDeleteText = new javax.swing.JTextField();
+        addressDelete = new javax.swing.JLabel();
+        addressDeleteText = new javax.swing.JTextField();
+        cityDelete = new javax.swing.JLabel();
+        cityDeleteText = new javax.swing.JTextField();
+        postalcodeDelete = new javax.swing.JLabel();
+        postalcodeDeleteText = new javax.swing.JTextField();
+        countryDelete = new javax.swing.JLabel();
+        countryDeleteText = new javax.swing.JTextField();
+        emailDelete = new javax.swing.JLabel();
+        emailDeleteText = new javax.swing.JTextField();
+        backgroundDelete = new javax.swing.JLabel();
         menu1 = new javax.swing.JPanel();
         homeButton1 = new javax.swing.JLabel();
         editButton = new javax.swing.JLabel();
@@ -571,95 +569,125 @@ public class Admin extends javax.swing.JFrame {
         AdminCreate.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
         AdminCreate.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
-        jLabel31.setText("jLabel11");
-        AdminCreate.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, 70));
+        corendonCreate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
+        corendonCreate.setText("jLabel11");
+        AdminCreate.add(corendonCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, 70));
 
-        jLabel32.setText("Zip/Postal code   :");
-        AdminCreate.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 240, 90, 20));
+        accountinfoCreate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        accountinfoCreate.setText("Account information:");
+        AdminCreate.add(accountinfoCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, -1, -1));
 
-        jLabel33.setText("Country    :");
-        AdminCreate.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 270, 70, 20));
+        personalinfoCreate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        personalinfoCreate.setText("Personal information:");
+        AdminCreate.add(personalinfoCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 110, -1, -1));
 
-        jLabel34.setText("Address   :");
-        AdminCreate.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 180, 60, 20));
+        newusernameCreate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        newusernameCreate.setText("New Username :");
+        AdminCreate.add(newusernameCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 100, 20));
 
-        jLabel35.setText("City     :");
-        AdminCreate.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, -1, -1));
-
-        jLabel36.setText("Name   :");
-        AdminCreate.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 150, -1, 20));
-
-        jLabel37.setText("Email     :");
-        AdminCreate.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 300, -1, -1));
-
-        homeadress.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        homeadress.setText("Example: Egidiusstraat");
-        homeadress.addActionListener(new java.awt.event.ActionListener() {
+        newusernameCreateText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        newusernameCreateText.setText("Example: Adminstrator1981");
+        newusernameCreateText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                homeadressActionPerformed(evt);
+                newusernameCreateTextActionPerformed(evt);
             }
         });
-        AdminCreate.add(homeadress, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 180, 240, -1));
+        AdminCreate.add(newusernameCreateText, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 240, -1));
 
-        homecity.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        homecity.setText("Example: Amsterdam");
-        homecity.setToolTipText("");
-        AdminCreate.add(homecity, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 210, 240, -1));
+        newpasswordCreate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        newpasswordCreate.setText("New Password :");
+        AdminCreate.add(newpasswordCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 100, 20));
 
-        homepostal.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        homepostal.setText("Example: 1055GK");
-        AdminCreate.add(homepostal, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 240, 240, -1));
+        newpasswordCreateText.setText("jPasswordField1");
+        newpasswordCreateText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        AdminCreate.add(newpasswordCreateText, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 240, 20));
 
-        homeemail.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        homeemail.setText("Example: John@corendon.com");
-        AdminCreate.add(homeemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 300, 240, -1));
+        repeatpasswordCreate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        repeatpasswordCreate.setText(" Repeat password :");
+        AdminCreate.add(repeatpasswordCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 100, 20));
 
-        firstname.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        firstname.setText("example: john");
-        AdminCreate.add(firstname, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, 240, -1));
-
-        homecountry.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        homecountry.setText("Example: The Netherlands");
-        AdminCreate.add(homecountry, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 270, 240, -1));
-
-        jLabel38.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel38.setText("Account information:");
-        AdminCreate.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, -1, -1));
-
-        jLabel39.setText("Account type     :");
-        AdminCreate.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 100, -1));
-
-        jLabel40.setText(" repeat password  :");
-        AdminCreate.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 100, 20));
-
-        jLabel41.setText("New Password   :");
-        AdminCreate.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 90, 20));
-
-        jLabel43.setText("New Username :");
-        AdminCreate.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 110, 20));
-
-        accounttypee.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        accounttypee.setText("Manager,Employee,Admin");
-        accounttypee.addActionListener(new java.awt.event.ActionListener() {
+        repeatpasswordCreateText.setText("jPasswordField1");
+        repeatpasswordCreateText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        repeatpasswordCreateText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                accounttypeeActionPerformed(evt);
+                repeatpasswordCreateTextActionPerformed(evt);
             }
         });
-        AdminCreate.add(accounttypee, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 240, -1));
+        AdminCreate.add(repeatpasswordCreateText, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 220, 240, 20));
 
-        jLabel45.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel45.setText("Personal information:");
-        AdminCreate.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, -1, -1));
+        accounttypeCreate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        accounttypeCreate.setText("Account type :");
+        AdminCreate.add(accounttypeCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 100, 20));
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vliegtuig_CorendonNL-2-stijgend.png"))); // NOI18N
-        AdminCreate.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 160, 50));
+        accounttypeCreateText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        accounttypeCreateText.setText("Manager,Employee,Admin");
+        accounttypeCreateText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accounttypeCreateTextActionPerformed(evt);
+            }
+        });
+        AdminCreate.add(accounttypeCreateText, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 240, -1));
 
-        jLabel3.setText("Date of birth :");
-        AdminCreate.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 330, -1, -1));
+        nameCreate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        nameCreate.setText("Name :");
+        AdminCreate.add(nameCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 150, 100, 20));
+
+        nameCreateText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        nameCreateText.setText("example: john");
+        AdminCreate.add(nameCreateText, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 150, 240, -1));
+
+        addressCreate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        addressCreate.setText("Address :");
+        AdminCreate.add(addressCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 100, 20));
+
+        addressCreateText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        addressCreateText.setText("Example: Egidiusstraat");
+        addressCreateText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addressCreateTextActionPerformed(evt);
+            }
+        });
+        AdminCreate.add(addressCreateText, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 180, 240, -1));
+
+        cityCreate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        cityCreate.setText("City :");
+        AdminCreate.add(cityCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 210, 100, 20));
+
+        cityCreateText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        cityCreateText.setText("Example: Amsterdam");
+        cityCreateText.setToolTipText("");
+        AdminCreate.add(cityCreateText, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 210, 240, -1));
+
+        postalcodeCreate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        postalcodeCreate.setText("Postal code :");
+        AdminCreate.add(postalcodeCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 240, 100, 20));
+
+        postalcodeCreateText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        postalcodeCreateText.setText("Example: 1055GK");
+        AdminCreate.add(postalcodeCreateText, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 240, 240, -1));
+
+        countryCreate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        countryCreate.setText("Country :");
+        AdminCreate.add(countryCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 270, 100, 20));
+
+        countryCreateText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        countryCreateText.setText("Example: The Netherlands");
+        AdminCreate.add(countryCreateText, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 270, 240, -1));
+
+        emailCreate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        emailCreate.setText("Email :");
+        AdminCreate.add(emailCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 300, 100, 20));
+
+        emailCreateText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        emailCreateText.setText("Example: John@corendon.com");
+        AdminCreate.add(emailCreateText, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 300, 240, -1));
+
+        dateofbirthCreate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        dateofbirthCreate.setText("Date of birth");
+        AdminCreate.add(dateofbirthCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 330, 100, 20));
 
         jSpinner2.setModel(new javax.swing.SpinnerDateModel(new java.util.Date(), null, null, java.util.Calendar.YEAR));
-        AdminCreate.add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 330, 150, 20));
+        AdminCreate.add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, 150, 20));
 
         jButton2.setText("Save & Exit");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -669,32 +697,11 @@ public class Admin extends javax.swing.JFrame {
         });
         AdminCreate.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, -1, -1));
 
-        password2.setText("jPasswordField1");
-        password2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
-        password2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                password2ActionPerformed(evt);
-            }
-        });
-        AdminCreate.add(password2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 220, 240, 20));
-
-        password.setText("jPasswordField1");
-        password.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
-        AdminCreate.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 240, 20));
-
-        username1.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        username1.setText("Example: Adminstrator1981");
-        username1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                username1ActionPerformed(evt);
-            }
-        });
-        AdminCreate.add(username1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 240, -1));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
-        jLabel9.setToolTipText("");
-        jLabel9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        AdminCreate.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 450));
+        backgroundCreate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        backgroundCreate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
+        backgroundCreate.setToolTipText("");
+        backgroundCreate.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        AdminCreate.add(backgroundCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 450));
 
         Create.add(AdminCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -735,89 +742,99 @@ public class Admin extends javax.swing.JFrame {
         AdminDelete.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
         AdminDelete.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
-        jLabel42.setText("jLabel11");
-        AdminDelete.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, 70));
+        corendonDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/corendon-airlines.jpg"))); // NOI18N
+        corendonDelete.setText("jLabel11");
+        AdminDelete.add(corendonDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, 70));
 
-        jLabel44.setText("Zip/Postal code   :");
-        AdminDelete.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 240, 90, 20));
+        accountinfoDelete.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        accountinfoDelete.setText("Account information:");
+        AdminDelete.add(accountinfoDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, -1, -1));
 
-        jLabel46.setText("Country    :");
-        AdminDelete.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 270, 70, 20));
+        personalinfoDelete.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        personalinfoDelete.setText("Personal information:");
+        AdminDelete.add(personalinfoDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 110, -1, -1));
 
-        jLabel47.setText("Address   :");
-        AdminDelete.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 180, 60, 20));
-
-        jLabel48.setText("City     :");
-        AdminDelete.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, -1, -1));
-
-        jLabel49.setText("Name   :");
-        AdminDelete.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 150, -1, 20));
-
-        jLabel50.setText("Email     :");
-        AdminDelete.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 300, -1, -1));
-
-        jTextField24.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextField24.setText("Example: Egidiusstraat");
-        jTextField24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField24ActionPerformed(evt);
-            }
-        });
-        AdminDelete.add(jTextField24, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 180, 240, -1));
-
-        jTextField25.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextField25.setText("Example: Amsterdam");
-        jTextField25.setToolTipText("");
-        AdminDelete.add(jTextField25, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 210, 240, -1));
-
-        jTextField29.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextField29.setText("Example: 1055GK");
-        AdminDelete.add(jTextField29, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 240, 240, -1));
-
-        jTextField30.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextField30.setText("Example: John@corendon.com");
-        AdminDelete.add(jTextField30, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 300, 240, -1));
-
-        jTextField31.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextField31.setText("example: john");
-        AdminDelete.add(jTextField31, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, 240, -1));
-
-        jTextField32.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextField32.setText("Example: The Netherlands");
-        AdminDelete.add(jTextField32, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 270, 240, -1));
-
-        jLabel51.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel51.setText("Account information:");
-        AdminDelete.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, -1, -1));
-
-        jLabel54.setText("Are u sure :");
-        AdminDelete.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 80, 20));
-
-        jLabel55.setText("Choose account :");
-        AdminDelete.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 100, 20));
-
-        jLabel56.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel56.setText("Personal information:");
-        AdminDelete.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, -1, -1));
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vliegtuig_CorendonNL-2-stijgend.png"))); // NOI18N
-        AdminDelete.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 160, 50));
-
-        jCheckBox1.setText("Yes");
-        AdminDelete.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, -1));
-
-        jButton1.setText("Delete");
-        AdminDelete.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, -1, -1));
+        chooseaccountDelete.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        chooseaccountDelete.setText("Choose account :");
+        AdminDelete.add(chooseaccountDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 100, 20));
 
         jSpinner1.setModel(new javax.swing.SpinnerListModel(new String[] {"Admini1994", "Manager001", "James007", "YassineEla"}));
         jSpinner1.setToolTipText("");
-        AdminDelete.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 110, 30));
+        AdminDelete.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 110, 30));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
-        jLabel10.setToolTipText("");
-        jLabel10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        AdminDelete.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 450));
+        areusureDelete.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        areusureDelete.setText("Are u sure :");
+        AdminDelete.add(areusureDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 100, 20));
+
+        jCheckBox1.setText("Yes");
+        AdminDelete.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, -1, -1));
+
+        deleteDeleteButton.setText("Delete");
+        AdminDelete.add(deleteDeleteButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, -1, -1));
+
+        nameDelete.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        nameDelete.setText("Name :");
+        AdminDelete.add(nameDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 150, 100, 20));
+
+        nameDeleteText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        nameDeleteText.setText("example: John");
+        nameDeleteText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nameDeleteTextActionPerformed(evt);
+            }
+        });
+        AdminDelete.add(nameDeleteText, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 150, 240, 20));
+
+        addressDelete.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        addressDelete.setText("Address :");
+        AdminDelete.add(addressDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 100, 20));
+
+        addressDeleteText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        addressDeleteText.setText("Example: Egidiusstraat");
+        addressDeleteText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addressDeleteTextActionPerformed(evt);
+            }
+        });
+        AdminDelete.add(addressDeleteText, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 180, 240, 20));
+
+        cityDelete.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        cityDelete.setText("City :");
+        AdminDelete.add(cityDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 210, 100, 20));
+
+        cityDeleteText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        cityDeleteText.setText("Example: Amsterdam");
+        cityDeleteText.setToolTipText("");
+        AdminDelete.add(cityDeleteText, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 210, 240, 20));
+
+        postalcodeDelete.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        postalcodeDelete.setText("Postal code :");
+        AdminDelete.add(postalcodeDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 240, 100, 20));
+
+        postalcodeDeleteText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        postalcodeDeleteText.setText("Example: 1055GK");
+        AdminDelete.add(postalcodeDeleteText, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 240, 240, 20));
+
+        countryDelete.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        countryDelete.setText("Country :");
+        AdminDelete.add(countryDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 270, 100, 20));
+
+        countryDeleteText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        countryDeleteText.setText("Example: The Netherlands");
+        AdminDelete.add(countryDeleteText, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 270, 240, 20));
+
+        emailDelete.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        emailDelete.setText("Email :");
+        AdminDelete.add(emailDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 300, 100, 20));
+
+        emailDeleteText.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        emailDeleteText.setText("Example: John@corendon.com");
+        AdminDelete.add(emailDeleteText, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 300, 240, 20));
+
+        backgroundDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/00000001.JPG"))); // NOI18N
+        backgroundDelete.setToolTipText("");
+        backgroundDelete.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        AdminDelete.add(backgroundDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 450));
 
         Delete.add(AdminDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -1021,17 +1038,17 @@ public class Admin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_addressEditTextActionPerformed
 
-    private void homeadressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeadressActionPerformed
+    private void addressCreateTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addressCreateTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_homeadressActionPerformed
+    }//GEN-LAST:event_addressCreateTextActionPerformed
 
-    private void accounttypeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accounttypeeActionPerformed
+    private void accounttypeCreateTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accounttypeCreateTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_accounttypeeActionPerformed
+    }//GEN-LAST:event_accounttypeCreateTextActionPerformed
 
-    private void jTextField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField24ActionPerformed
+    private void addressDeleteTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addressDeleteTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField24ActionPerformed
+    }//GEN-LAST:event_addressDeleteTextActionPerformed
 
     private void logoutKnopMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoutKnopMouseEntered
         logoutKnop.setBackground(new java.awt.Color(224, 90, 90));
@@ -1047,7 +1064,7 @@ public class Admin extends javax.swing.JFrame {
         //open database connection
         dbm.openConnection();
 
-        CreateAccount createaccount = new CreateAccount("",false, username1.getText(), password.getText(), accounttypee.getText(), firstname.getText(), homeadress.getText(), homecity.getText(), homepostal.getText(), homecountry.getText(), homeemail.getText());
+        CreateAccount createaccount = new CreateAccount("",false, newusernameCreateText.getText(), newpasswordCreateText.getText(), accounttypeCreateText.getText(), nameCreateText.getText(), addressCreateText.getText(), cityCreateText.getText(), postalcodeCreateText.getText(), countryCreateText.getText(), emailCreateText.getText());
         if ("employee".equals(createaccount.accounttype)) {
             createaccount.accounttype = "employee";
         }
@@ -1067,7 +1084,7 @@ public class Admin extends javax.swing.JFrame {
             createaccount.accounttype = "admin";
         }
         qm.insertcreateaccount(createaccount);
-        Employee.infoBox("Succesfully Saved\n" + "Username:  " + username1.getText(), "Saved");
+        Employee.infoBox("Succesfully Saved\n" + "Username:  " + newusernameCreateText.getText(), "Saved");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void editPersonalinfoButtonKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_editPersonalinfoButtonKeyPressed
@@ -1112,9 +1129,9 @@ public class Admin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_usernamePersonalTextActionPerformed
 
-    private void username1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_username1ActionPerformed
+    private void newusernameCreateTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newusernameCreateTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_username1ActionPerformed
+    }//GEN-LAST:event_newusernameCreateTextActionPerformed
 
     private void deleteaccountPersonalButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_deleteaccountPersonalButtonMouseClicked
       Dbmanager dbm = new Dbmanager();
@@ -1152,9 +1169,9 @@ public class Admin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_saveEditActionPerformed
 
-    private void password2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_password2ActionPerformed
+    private void repeatpasswordCreateTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_repeatpasswordCreateTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_password2ActionPerformed
+    }//GEN-LAST:event_repeatpasswordCreateTextActionPerformed
 
     private void logoutKnopMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoutKnopMouseClicked
   Login login = new Login();
@@ -1169,6 +1186,10 @@ public class Admin extends javax.swing.JFrame {
         jPanel1.repaint();
         jPanel1.revalidate(); 
     }//GEN-LAST:event_editAdminButtonMouseClicked
+
+    private void nameDeleteTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameDeleteTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nameDeleteTextActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1231,34 +1252,57 @@ public class Admin extends javax.swing.JFrame {
     private javax.swing.JPanel Home;
     private javax.swing.JLabel ID;
     private javax.swing.JLabel Name;
+    private javax.swing.JLabel accountinfoCreate;
+    private javax.swing.JLabel accountinfoDelete;
     private javax.swing.JLabel accountinfoEdit;
+    private javax.swing.JLabel accounttypeCreate;
+    private javax.swing.JTextField accounttypeCreateText;
     private javax.swing.JComboBox accounttypeDropboxEdit;
     private javax.swing.JLabel accounttypePersonal;
     private javax.swing.JTextField accounttypePersonalText;
-    private javax.swing.JTextField accounttypee;
     private javax.swing.JLabel accountypeEdit;
     private javax.swing.JLabel addressAdmin;
     private javax.swing.JLabel addressAdminText;
+    private javax.swing.JLabel addressCreate;
+    private javax.swing.JTextField addressCreateText;
+    private javax.swing.JLabel addressDelete;
+    private javax.swing.JTextField addressDeleteText;
     private javax.swing.JLabel addressEdit;
     private javax.swing.JTextField addressEditText;
     private javax.swing.JPanel adminEdit;
     private javax.swing.JPanel adminPersonal;
+    private javax.swing.JLabel areusureDelete;
+    private javax.swing.JLabel backgroundCreate;
+    private javax.swing.JLabel backgroundDelete;
     private javax.swing.JLabel backgroundEdit;
     private javax.swing.JLabel backgroundPersonal;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JLabel chooseaccountDelete;
     private javax.swing.JLabel cityAdmin;
     private javax.swing.JLabel cityAdminText;
+    private javax.swing.JLabel cityCreate;
+    private javax.swing.JTextField cityCreateText;
+    private javax.swing.JLabel cityDelete;
+    private javax.swing.JTextField cityDeleteText;
     private javax.swing.JLabel cityEdit;
     private javax.swing.JTextField cityEditText;
+    private javax.swing.JLabel corendonCreate;
+    private javax.swing.JLabel corendonDelete;
     private javax.swing.JLabel corendonEdit;
     private javax.swing.JLabel corendonPersonal;
     private javax.swing.JLabel countryAdmin;
     private javax.swing.JLabel countryAdminText;
+    private javax.swing.JLabel countryCreate;
+    private javax.swing.JTextField countryCreateText;
+    private javax.swing.JLabel countryDelete;
+    private javax.swing.JTextField countryDeleteText;
     private javax.swing.JLabel countryEdit;
     private javax.swing.JTextField countryEditText;
     private javax.swing.JLabel createButton;
     private javax.swing.JLabel dateAdmin;
     private javax.swing.JLabel dateAdminText;
+    private javax.swing.JLabel dateofbirthCreate;
+    private javax.swing.JButton deleteDeleteButton;
     private javax.swing.JButton deleteaccountPersonalButton;
     private javax.swing.JToggleButton editAdminButton;
     private javax.swing.JLabel editButton;
@@ -1267,94 +1311,69 @@ public class Admin extends javax.swing.JFrame {
     private javax.swing.JLabel editinfoPersonal;
     private javax.swing.JLabel emailAdmin;
     private javax.swing.JLabel emailAdminText;
+    private javax.swing.JLabel emailCreate;
+    private javax.swing.JTextField emailCreateText;
+    private javax.swing.JLabel emailDelete;
+    private javax.swing.JTextField emailDeleteText;
     private javax.swing.JLabel emailEdit;
     private javax.swing.JTextField emailEditText;
-    private javax.swing.JTextField firstname;
     private javax.swing.JLabel helpButton;
     private javax.swing.JLabel homeButton1;
-    private javax.swing.JTextField homeadress;
-    private javax.swing.JTextField homecity;
-    private javax.swing.JTextField homecountry;
-    private javax.swing.JTextField homeemail;
-    private javax.swing.JTextField homepostal;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JFileChooser jFileChooser1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel54;
-    private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     public javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JSpinner jSpinner2;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField31;
-    private javax.swing.JTextField jTextField32;
     private javax.swing.JList listUsers;
     private javax.swing.JLabel logoutKnop;
     private javax.swing.JPanel menu1;
     private javax.swing.JLabel nameAdmin;
     private javax.swing.JLabel nameAdminText;
+    private javax.swing.JLabel nameCreate;
+    private javax.swing.JTextField nameCreateText;
+    private javax.swing.JLabel nameDelete;
+    private javax.swing.JTextField nameDeleteText;
     private javax.swing.JLabel nameEdit;
     private javax.swing.JTextField nameEditText;
+    private javax.swing.JLabel newpasswordCreate;
+    private javax.swing.JPasswordField newpasswordCreateText;
     private javax.swing.JLabel newpasswordEdit;
     private javax.swing.JTextField newpasswordEditText;
+    private javax.swing.JLabel newusernameCreate;
+    private javax.swing.JTextField newusernameCreateText;
     private javax.swing.JLabel newusernameEdit;
     private javax.swing.JTextField newusernameEditText;
     private javax.swing.JLabel oldpasswordEdit;
     private javax.swing.JTextField oldpasswordEditText;
-    private javax.swing.JPasswordField password;
-    private javax.swing.JPasswordField password2;
     private javax.swing.JLabel passwordPersonal;
     private javax.swing.JTextField passwordPersonalText;
     private javax.swing.JLabel personalInfoEdit;
+    private javax.swing.JLabel personalinfoCreate;
+    private javax.swing.JLabel personalinfoDelete;
     private javax.swing.JLabel postalcodeAdmin;
     private javax.swing.JLabel postalcodeAdminText;
+    private javax.swing.JLabel postalcodeCreate;
+    private javax.swing.JTextField postalcodeCreateText;
+    private javax.swing.JLabel postalcodeDelete;
+    private javax.swing.JTextField postalcodeDeleteText;
     private javax.swing.JLabel postalcodeEdit;
     private javax.swing.JTextField postalcodeEditText;
     private javax.swing.JLabel profileAdmin;
+    private javax.swing.JLabel repeatpasswordCreate;
+    private javax.swing.JPasswordField repeatpasswordCreateText;
     private javax.swing.JLabel repeatpasswordEdit;
     private javax.swing.JTextField repeatpasswordEditText;
     private javax.swing.JButton saveEdit;
     private javax.swing.JTextField searchPersonalText;
     private javax.swing.JButton searchaccountPersonalButton;
     private javax.swing.JButton selectaccountPersonalButton;
-    private javax.swing.JTextField username1;
     private javax.swing.JLabel usernameAdmin;
     private javax.swing.JLabel usernameAdminText;
     private javax.swing.JLabel usernamePersonal;
