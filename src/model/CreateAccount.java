@@ -19,7 +19,6 @@ public class CreateAccount {
 }
 
     public CreateAccount(String userid, Boolean succes, String username, String passwordd, String accounttype, String name, String adress, String city, String postal, String country, String email) {
-
         this.userid = userid;
         this.succes=succes;
         this.username = username;
@@ -31,6 +30,5 @@ public class CreateAccount {
         this.postal = postal;
         this.country = country;
         this.email = email;
-    
     }
 }

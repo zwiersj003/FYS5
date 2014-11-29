@@ -73,6 +73,8 @@ public static void infoBox(String infoMessage, String titleBar)
    
                               
   public void SetUser(CreateAccount createaccount) {
+      
+      
         loginAsEmployee.setText("Logged in as: " +createaccount.accounttype);
         idAsEmployee.setText("Employee id: " +createaccount.username);
         nameEmployeeText.setText(createaccount.name);
@@ -108,7 +110,7 @@ private PopupMenu Tabel;
         setSize(1300,650);
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        
+
         initComponents();
         frame.setLocationRelativeTo( null );
         jPanel1.removeAll();
@@ -255,6 +257,7 @@ private PopupMenu Tabel;
         ManageBaggagee = new javax.swing.JLabel();
         logoutKnop = new javax.swing.JLabel();
         Background = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Lost Baggage");
@@ -1126,6 +1129,19 @@ private PopupMenu Tabel;
 
         getContentPane().add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 650));
 
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 490, -1, -1));
+
         bindingGroup.bind();
 
         pack();
@@ -1423,7 +1439,7 @@ private PopupMenu Tabel;
     }//GEN-LAST:event_bagIdEmployeeSearchButMouseEntered
 
     private void costEmployeeSearchButMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_costEmployeeSearchButMouseExited
-        costEmployeeSearchBut.setBackground(new java.awt.Color(224,90,90));
+        costEmployeeSearchBut.setBackground(new java.awt.Color(151,53,53));
     }//GEN-LAST:event_costEmployeeSearchButMouseExited
 
     private void bagIdEmployeeSearchButMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bagIdEmployeeSearchButMouseExited
@@ -1522,14 +1538,13 @@ private PopupMenu Tabel;
         contentPane.setBounds(200, 20, 900, 500);
         table.setSize(100, 100);
         JScrollPane jScrollPane1 = new JScrollPane(table);
-        jScrollPane1.setSize(900, 500); 
+        jScrollPane1.setSize(900, 500);
         Button a = new Button("HI");
         jPanel1.removeAll();
-        jPanel1.revalidate();   
+        jPanel1.revalidate();
         jPanel1.add(jScrollPane1);
         jPanel1.repaint();
         jPanel1.revalidate();
-
       
         jScrollPane1 = new JScrollPane(table);
         frame.add(jScrollPane1, BorderLayout.CENTER);
@@ -1537,7 +1552,7 @@ private PopupMenu Tabel;
         frame.setVisible(true);
         frame.setLocationRelativeTo(null);
         jPanel1.removeAll();
-        jPanel1.revalidate();   
+        jPanel1.revalidate();
         jPanel1.add(EmployeeSearch);
         jPanel1.repaint();
         jPanel1.revalidate();
@@ -1911,6 +1926,7 @@ private PopupMenu Tabel;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel loginAsEmployee;
